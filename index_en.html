@@ -225,7 +225,7 @@
 
         /* Footer */
         footer {
-            background-color: #0b6b4f;
+            background-color: #6b7280;
             color: white;
             padding: 35px 15px 15px;
             margin-top: 40px;
@@ -327,7 +327,7 @@
 :root{--pb-green:#2f9e44;--pb-dark:#202522;--pb-border:#e8ece9}
 body{padding-top:88px!important}
 .site-header{position:fixed!important;inset:0 0 auto 0;z-index:2000;direction:ltr!important;display:flex!important;align-items:center!important;justify-content:space-between!important;min-height:88px;height:88px;padding:14px 42px!important;background:#fff!important;border-bottom:1px solid var(--pb-border);box-shadow:0 2px 12px rgba(21,45,28,.08)!important}
-.site-brand{display:inline-flex;align-items:center;text-decoration:none;min-width:0}.privatbank-logo-image{display:block;width:auto;height:58px;max-width:min(330px,52vw);object-fit:contain;object-position:left center;background:#fff}
+.site-brand{display:inline-flex;align-items:center;text-decoration:none;min-width:0}.privatbank-logo-image{display:block;width:auto;height:58px;max-width:min(330px,60vw);object-fit:contain;object-position:left center;background:#fff}
 .privatbank-wordmark{display:inline-flex;align-items:center;gap:10px;color:var(--pb-green);font-size:clamp(24px,3.2vw,42px);font-weight:700;letter-spacing:-1.2px;white-space:nowrap}
 .privatbank-mark{position:relative;width:42px;height:42px;border:7px solid var(--pb-green);display:inline-block;flex:0 0 auto}
 .privatbank-mark:before{content:"";position:absolute;width:18px;height:7px;left:-7px;bottom:-7px;background:#111}
@@ -345,7 +345,7 @@ body{padding-top:88px!important}
 .privatbank-alert-link{display:inline-flex;align-items:center;justify-content:center;min-width:290px;padding:11px 28px;border:2px solid #8b8576;border-radius:40px;color:#171717;font-size:clamp(18px,1.8vw,28px);text-decoration:none}
 .privatbank-carousel{position:relative;width:100%;overflow:hidden;background:#eef8f0;line-height:0}
 .privatbank-slide{display:none;width:100%}.privatbank-slide.active{display:block;animation:privatbank-fade .45s ease}
-.privatbank-slide img{display:block;width:100%;height:auto;max-height:min(55vw,560px);min-height:250px;aspect-ratio:16/9;object-fit:contain;object-position:center;background:#eef8f0}
+.privatbank-slide img{display:block;width:100%;height:auto;max-height:560px;min-height:250px;object-fit:contain;object-position:center;background:#eef8f0}
 .privatbank-prev,.privatbank-next{position:absolute;top:50%;transform:translateY(-50%);z-index:2;width:48px;height:66px;border:0;border-radius:10px;background:rgba(255,255,255,.72);color:#555;font-size:46px;line-height:1;cursor:pointer}.privatbank-prev{left:24px}.privatbank-next{right:24px}
 .privatbank-dots{position:absolute;bottom:18px;left:50%;transform:translateX(-50%);display:flex;gap:8px;z-index:2}.privatbank-dot{width:38px;height:5px;border:0;background:rgba(255,255,255,.58);cursor:pointer}.privatbank-dot.active{background:#555}
 @keyframes privatbank-fade{from{opacity:.35}to{opacity:1}}
@@ -369,15 +369,15 @@ body{padding-top:88px!important}
 
     <!-- Header: Logo left, Login button, Language button, and Menu icon right -->
 <header class="site-header">
-    <a class="site-brand" href="index_en.html" aria-label="PrivatBank"><img class="privatbank-logo-image" src="static/privatbank-logo-en.jpg" alt="PrivatBank"></a>
+    <a class="site-brand" href="index_en.html" aria-label="PrivatBank"><img class="privatbank-logo-image" src="./static/privatbank-logo-en.jpg" loading="eager" decoding="async" alt="PrivatBank"></a>
     <div class="site-header-actions" aria-label="Navigation"><a href="index.html" class="language-icon" aria-label="Українська" title="Українська">UA</a><span class="language-label">UA</span><div class="header-icon menu-icon" title="Menu" aria-label="Menu"></div></div>
 </header>
 <div class="privatbank-carousel" aria-label="Featured services">
-    <div class="privatbank-slide active"><img src="static/banners/banner-1.jpg" alt="Featured service 1"></div>
-    <div class="privatbank-slide"><img src="static/banners/banner-2.jpg" alt="Featured service 2"></div>
-    <div class="privatbank-slide"><img src="static/banners/banner-3.jpg" alt="Featured service 3"></div>
-    <div class="privatbank-slide"><img src="static/banners/banner-4.jpg" alt="Featured service 4"></div>
-    <div class="privatbank-slide"><img src="static/banners/banner-5.jpg" alt="Featured service 5"></div>
+    <div class="privatbank-slide active"><img src="./static/banners/banner-1.jpg" loading="eager" decoding="async" alt="Featured service 1"></div>
+    <div class="privatbank-slide"><img src="./static/banners/banner-2.jpg" loading="lazy" decoding="async" alt="Featured service 2"></div>
+    <div class="privatbank-slide"><img src="./static/banners/banner-3.jpg" loading="lazy" decoding="async" alt="Featured service 3"></div>
+    <div class="privatbank-slide"><img src="./static/banners/banner-4.jpg" loading="lazy" decoding="async" alt="Featured service 4"></div>
+    <div class="privatbank-slide"><img src="./static/banners/banner-5.jpg" loading="lazy" decoding="async" alt="Featured service 5"></div>
     <button class="privatbank-prev" type="button" aria-label="Previous banner">‹</button><button class="privatbank-next" type="button" aria-label="Next banner">›</button>
     <div class="privatbank-dots" role="tablist"><button class="privatbank-dot active" type="button" aria-label="Banner 1"></button><button class="privatbank-dot" type="button" aria-label="Banner 2"></button><button class="privatbank-dot" type="button" aria-label="Banner 3"></button><button class="privatbank-dot" type="button" aria-label="Banner 4"></button><button class="privatbank-dot" type="button" aria-label="Banner 5"></button></div>
 </div>
@@ -537,8 +537,9 @@ body{padding-top:88px!important}
         </div>
         <div class="footer-section">
             <h3>Customer Care &amp; Contact</h3>
-            <p><strong>Customer Care:</strong> 19900</p>
-            <p><strong>Landline:</strong> 0223456789</p>
+            <p><strong>Customer Care:</strong> 3700</p>
+            <p><strong>Phone:</strong> +380737161131</p>
+            <p><strong>Phone 2:</strong> 0800505120</p>
             <p><strong>Official Email:</strong> info@nbk.com</p>
         </div>
     </div>
