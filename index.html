@@ -366,7 +366,7 @@
 :root{--pb-green:#2f9e44;--pb-dark:#202522;--pb-border:#e8ece9}
 body{padding-top:88px!important}
 .site-header{position:fixed!important;inset:0 0 auto 0;z-index:2000;direction:ltr!important;display:flex!important;align-items:center!important;justify-content:space-between!important;min-height:88px;height:88px;padding:14px 42px!important;background:#fff!important;border-bottom:1px solid var(--pb-border);box-shadow:0 2px 12px rgba(21,45,28,.08)!important}
-.site-brand{display:inline-flex;align-items:center;text-decoration:none;min-width:0}
+.site-brand{display:inline-flex;align-items:center;text-decoration:none;min-width:0}.privatbank-logo-image{display:block;width:auto;height:58px;max-width:min(330px,52vw);object-fit:contain;object-position:left center;background:#fff}
 .privatbank-wordmark{display:inline-flex;align-items:center;gap:10px;color:var(--pb-green);font-size:clamp(24px,3.2vw,42px);font-weight:700;letter-spacing:-1.2px;white-space:nowrap}
 .privatbank-mark{position:relative;width:42px;height:42px;border:7px solid var(--pb-green);display:inline-block;flex:0 0 auto}
 .privatbank-mark:before{content:"";position:absolute;width:18px;height:7px;left:-7px;bottom:-7px;background:#111}
@@ -384,11 +384,11 @@ body{padding-top:88px!important}
 .privatbank-alert-link{display:inline-flex;align-items:center;justify-content:center;min-width:290px;padding:11px 28px;border:2px solid #8b8576;border-radius:40px;color:#171717;font-size:clamp(18px,1.8vw,28px);text-decoration:none}
 .privatbank-carousel{position:relative;width:100%;overflow:hidden;background:#eef8f0;line-height:0}
 .privatbank-slide{display:none;width:100%}.privatbank-slide.active{display:block;animation:privatbank-fade .45s ease}
-.privatbank-slide img{display:block;width:100%;height:min(55vw,560px);min-height:250px;object-fit:contain;object-position:center;background:#eef8f0}
+.privatbank-slide img{display:block;width:100%;height:auto;max-height:min(55vw,560px);min-height:250px;aspect-ratio:16/9;object-fit:contain;object-position:center;background:#eef8f0}
 .privatbank-prev,.privatbank-next{position:absolute;top:50%;transform:translateY(-50%);z-index:2;width:48px;height:66px;border:0;border-radius:10px;background:rgba(255,255,255,.72);color:#555;font-size:46px;line-height:1;cursor:pointer}.privatbank-prev{left:24px}.privatbank-next{right:24px}
 .privatbank-dots{position:absolute;bottom:18px;left:50%;transform:translateX(-50%);display:flex;gap:8px;z-index:2}.privatbank-dot{width:38px;height:5px;border:0;background:rgba(255,255,255,.58);cursor:pointer}.privatbank-dot.active{background:#555}
 @keyframes privatbank-fade{from{opacity:.35}to{opacity:1}}
-@media(max-width:620px){body{padding-top:70px!important}.site-header{height:70px;min-height:70px;padding:10px 18px!important}.privatbank-wordmark{font-size:22px;gap:7px;letter-spacing:-.8px}.privatbank-mark{width:32px;height:32px;border-width:5px}.site-header-actions{gap:10px!important}.site-header-actions .language-icon{height:32px;padding:0 10px;font-size:12px}.site-header-actions .language-label{display:none!important}.menu-icon{width:32px;height:26px}.menu-icon:after{width:32px;top:11px}.privatbank-alert{min-height:76px;padding:12px 18px;gap:10px}.privatbank-alert-title{font-size:14px;letter-spacing:0}.privatbank-alert-link{min-width:112px;padding:8px 10px;font-size:14px}.privatbank-slide img{height:70vw;min-height:230px}.privatbank-prev,.privatbank-next{width:34px;height:48px;font-size:34px}.privatbank-prev{left:10px}.privatbank-next{right:10px}.privatbank-dots{bottom:11px;gap:4px}.privatbank-dot{width:24px}}
+@media(max-width:620px){body{padding-top:70px!important}.site-header{height:70px;min-height:70px;padding:10px 18px!important}.privatbank-wordmark{font-size:22px;gap:7px;letter-spacing:-.8px}.privatbank-logo-image{height:48px;max-width:58vw}.privatbank-mark{width:32px;height:32px;border-width:5px}.site-header-actions{gap:10px!important}.site-header-actions .language-icon{height:32px;padding:0 10px;font-size:12px}.site-header-actions .language-label{display:none!important}.menu-icon{width:32px;height:26px}.menu-icon:after{width:32px;top:11px}.privatbank-alert{min-height:76px;padding:12px 18px;gap:10px}.privatbank-alert-title{font-size:14px;letter-spacing:0}.privatbank-alert-link{min-width:112px;padding:8px 10px;font-size:14px}.privatbank-slide img{height:70vw;min-height:230px}.privatbank-prev,.privatbank-next{width:34px;height:48px;font-size:34px}.privatbank-prev{left:10px}.privatbank-next{right:10px}.privatbank-dots{bottom:11px;gap:4px}.privatbank-dot{width:24px}}
 </style>
 
 
@@ -408,16 +408,15 @@ body{padding-top:88px!important}
 
     <!-- الهيدر المحدث: اللوجو يمين، وزر تسجيل الدخول البرتقالي، زر تبديل اللغة، وثلاث شرطات يسار -->
 <header class="site-header">
-    <a class="site-brand" href="index.html" aria-label="PrivatBank"><span class="privatbank-wordmark"><span class="privatbank-mark" aria-hidden="true"></span><span>ПриватБанк</span></span></a>
+    <a class="site-brand" href="index.html" aria-label="PrivatBank"><img class="privatbank-logo-image" src="static/privatbank-logo-uk.jpg" alt="ПриватБанк"></a>
     <div class="site-header-actions" aria-label="Навігація"><a href="index_en.html" class="language-icon" aria-label="English" title="English">EN</a><div class="header-icon menu-icon" title="Меню" aria-label="Меню"></div></div>
 </header>
-<div class="privatbank-alert"><span class="privatbank-alert-title">Робота банку під час блекаутів</span><a class="privatbank-alert-link" href="#watches">Детальніше</a></div>
 <div class="privatbank-carousel" aria-label="العروض المميزة">
-    <div class="privatbank-slide active"><img src="/static/banners/banner-1.jpg" alt="Рекомендована послуга 1"></div>
-    <div class="privatbank-slide"><img src="/static/banners/banner-2.jpg" alt="Рекомендована послуга 2"></div>
-    <div class="privatbank-slide"><img src="/static/banners/banner-3.jpg" alt="Рекомендована послуга 3"></div>
-    <div class="privatbank-slide"><img src="/static/banners/banner-4.jpg" alt="Рекомендована послуга 4"></div>
-    <div class="privatbank-slide"><img src="/static/banners/banner-5.jpg" alt="Рекомендована послуга 5"></div>
+    <div class="privatbank-slide active"><img src="static/banners/banner-1.jpg" alt="Рекомендована послуга 1"></div>
+    <div class="privatbank-slide"><img src="static/banners/banner-2.jpg" alt="Рекомендована послуга 2"></div>
+    <div class="privatbank-slide"><img src="static/banners/banner-3.jpg" alt="Рекомендована послуга 3"></div>
+    <div class="privatbank-slide"><img src="static/banners/banner-4.jpg" alt="Рекомендована послуга 4"></div>
+    <div class="privatbank-slide"><img src="static/banners/banner-5.jpg" alt="Рекомендована послуга 5"></div>
     <button class="privatbank-prev" type="button" aria-label="السابق">‹</button><button class="privatbank-next" type="button" aria-label="التالي">›</button>
     <div class="privatbank-dots" role="tablist"><button class="privatbank-dot active" type="button" aria-label="Банер 1"></button><button class="privatbank-dot" type="button" aria-label="Банер 2"></button><button class="privatbank-dot" type="button" aria-label="Банер 3"></button><button class="privatbank-dot" type="button" aria-label="Банер 4"></button><button class="privatbank-dot" type="button" aria-label="Банер 5"></button></div>
 </div>
