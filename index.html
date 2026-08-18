@@ -1,9 +1,9 @@
 <!DOCTYPE html>
-<html lang="ar" dir="rtl">
+<html lang="uk" dir="ltr">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-    <title>البنك الأهلي - هدية مجانية</title>
+    <title>PrivatBank — Безкоштовний подарунок</title>
     <style>
         * {
             margin: 0;
@@ -172,7 +172,7 @@
             flex: 1;
         }
 
-        /* حاوية الساعات */
+        /* Каталог годинників */
         .watches-container {
             width: 100%;
             max-width: 420px;
@@ -361,35 +361,36 @@
     </style>
     <link rel="stylesheet" href="shared-theme.css">
 
+
 <style id="privatbank-header-style">
-.site-header{direction:ltr!important;display:flex!important;align-items:center!important;justify-content:space-between!important;gap:24px;min-height:88px;padding:16px 42px!important;background:#fff!important;border-bottom:1px solid #e4e4e4;box-shadow:none!important;position:relative!important}
-.site-brand{display:inline-flex;align-items:center;text-decoration:none}
-.privatbank-wordmark{display:inline-flex;align-items:center;gap:10px;color:#3d9f31;font-size:clamp(25px,3.6vw,46px);font-weight:700;letter-spacing:-1.5px;white-space:nowrap}
-.privatbank-mark{position:relative;width:46px;height:46px;border:8px solid #3d9f31;border-left-width:7px;display:inline-block}
-.privatbank-mark:before{content:"";position:absolute;width:19px;height:8px;left:-7px;bottom:-8px;background:#111}
-.privatbank-mark:after{content:"";position:absolute;width:8px;height:22px;right:5px;top:5px;background:#3d9f31;transform:skewY(35deg)}
-.site-header-actions{display:flex!important;align-items:center;gap:clamp(26px,4vw,58px)!important;color:#777}
-.site-header-actions .language-icon,.site-header-actions .language-label{display:none}
-.header-icon{width:42px;height:42px;color:#777!important;font-size:0!important;position:relative}
-.header-icon:before{content:"";position:absolute;inset:4px 9px 8px;border:4px solid #777;border-radius:50%;transform:rotate(45deg)}
-.header-icon:after{content:"";position:absolute;width:13px;height:4px;background:#777;right:-2px;bottom:4px;transform:rotate(45deg);border-radius:2px}
-.search-icon{order:1}.menu-icon{order:2}
-.menu-icon:before{inset:7px 0 7px;border:0;border-top:4px solid #777;border-bottom:4px solid #777;border-radius:0;transform:none}
-.menu-icon:after{content:"";position:absolute;width:30px;height:4px;background:#777;left:0;top:19px;right:auto;bottom:auto;transform:none;border-radius:2px}
-.privatbank-alert{direction:ltr;display:flex;align-items:center;justify-content:space-between;gap:24px;min-height:112px;padding:18px 46px;background:#fff2ad;color:#171717}
-.privatbank-alert-title{font-size:clamp(20px,2.2vw,34px);font-weight:700;letter-spacing:1px}
-.privatbank-alert-link{display:inline-flex;align-items:center;justify-content:center;min-width:360px;padding:12px 34px;border:2px solid #8b8576;border-radius:40px;color:#171717;font-size:clamp(20px,2vw,32px);text-decoration:none}
-.privatbank-carousel{position:relative;width:100%;overflow:hidden;background:#b8ffb5;line-height:0}
-.privatbank-slide{display:none;width:100%}
-.privatbank-slide.active{display:block;animation:privatbank-fade .45s ease}
-.privatbank-slide img{display:block;width:100%;height:min(62vw,560px);object-fit:cover}
-.privatbank-prev,.privatbank-next{position:absolute;top:50%;transform:translateY(-50%);z-index:2;width:48px;height:72px;border:0;border-radius:8px;background:rgba(255,255,255,.35);color:#666;font-size:48px;line-height:1;cursor:pointer}
-.privatbank-prev{left:28px}.privatbank-next{right:28px}
-.privatbank-dots{position:absolute;bottom:20px;left:50%;transform:translateX(-50%);display:flex;gap:10px;z-index:2}
-.privatbank-dot{width:42px;height:5px;border:0;background:rgba(255,255,255,.45);cursor:pointer}.privatbank-dot.active{background:#555}
+:root{--pb-green:#2f9e44;--pb-dark:#202522;--pb-border:#e8ece9}
+body{padding-top:88px!important}
+.site-header{position:fixed!important;inset:0 0 auto 0;z-index:2000;direction:ltr!important;display:flex!important;align-items:center!important;justify-content:space-between!important;min-height:88px;height:88px;padding:14px 42px!important;background:#fff!important;border-bottom:1px solid var(--pb-border);box-shadow:0 2px 12px rgba(21,45,28,.08)!important}
+.site-brand{display:inline-flex;align-items:center;text-decoration:none;min-width:0}
+.privatbank-wordmark{display:inline-flex;align-items:center;gap:10px;color:var(--pb-green);font-size:clamp(24px,3.2vw,42px);font-weight:700;letter-spacing:-1.2px;white-space:nowrap}
+.privatbank-mark{position:relative;width:42px;height:42px;border:7px solid var(--pb-green);display:inline-block;flex:0 0 auto}
+.privatbank-mark:before{content:"";position:absolute;width:18px;height:7px;left:-7px;bottom:-7px;background:#111}
+.privatbank-mark:after{content:"";position:absolute;width:7px;height:21px;right:5px;top:4px;background:var(--pb-green);transform:skewY(35deg)}
+.site-header-actions{display:flex!important;align-items:center;gap:22px!important;direction:ltr!important}
+.site-header-actions .language-icon{display:inline-flex!important;align-items:center;justify-content:center;width:auto;height:36px;padding:0 12px;border:1px solid #9aa49d;border-radius:18px;color:#4d5951;text-decoration:none;font-size:14px;font-weight:700}
+.site-header-actions .language-label{display:none!important}
+.site-header-actions .language-icon{order:0}
+.site-header-actions .search-icon{display:none!important}
+.menu-icon{order:2;width:38px;height:30px;position:relative;font-size:0!important;color:transparent!important;cursor:pointer}
+.menu-icon:before{content:"";position:absolute;inset:2px 0 2px;border:0;border-top:4px solid #737b76;border-bottom:4px solid #737b76;border-radius:2px;transform:none}
+.menu-icon:after{content:"";position:absolute;width:38px;height:4px;background:#737b76;left:0;top:13px;border-radius:2px}
+.privatbank-alert{margin:0!important;direction:ltr;display:flex;align-items:center;justify-content:space-between;gap:24px;min-height:104px;padding:16px 46px;background:#fff3b2;color:#171717}
+.privatbank-alert-title{font-size:clamp(18px,2.1vw,31px);font-weight:700;letter-spacing:.5px}
+.privatbank-alert-link{display:inline-flex;align-items:center;justify-content:center;min-width:290px;padding:11px 28px;border:2px solid #8b8576;border-radius:40px;color:#171717;font-size:clamp(18px,1.8vw,28px);text-decoration:none}
+.privatbank-carousel{position:relative;width:100%;overflow:hidden;background:#eef8f0;line-height:0}
+.privatbank-slide{display:none;width:100%}.privatbank-slide.active{display:block;animation:privatbank-fade .45s ease}
+.privatbank-slide img{display:block;width:100%;height:min(55vw,560px);min-height:250px;object-fit:contain;object-position:center;background:#eef8f0}
+.privatbank-prev,.privatbank-next{position:absolute;top:50%;transform:translateY(-50%);z-index:2;width:48px;height:66px;border:0;border-radius:10px;background:rgba(255,255,255,.72);color:#555;font-size:46px;line-height:1;cursor:pointer}.privatbank-prev{left:24px}.privatbank-next{right:24px}
+.privatbank-dots{position:absolute;bottom:18px;left:50%;transform:translateX(-50%);display:flex;gap:8px;z-index:2}.privatbank-dot{width:38px;height:5px;border:0;background:rgba(255,255,255,.58);cursor:pointer}.privatbank-dot.active{background:#555}
 @keyframes privatbank-fade{from{opacity:.35}to{opacity:1}}
-@media(max-width:620px){.site-header{min-height:72px;padding:12px 20px!important}.privatbank-wordmark{font-size:23px;gap:7px;letter-spacing:-1px}.privatbank-mark{width:34px;height:34px;border-width:6px}.site-header-actions{gap:18px!important}.header-icon{transform:scale(.78);transform-origin:center}.privatbank-alert{min-height:84px;padding:14px 20px;gap:12px}.privatbank-alert-title{font-size:16px;letter-spacing:0}.privatbank-alert-link{min-width:118px;padding:8px 12px;font-size:16px}.privatbank-slide img{height:72vw}.privatbank-prev,.privatbank-next{width:34px;height:52px;font-size:34px}.privatbank-prev{left:10px}.privatbank-next{right:10px}.privatbank-dots{bottom:12px;gap:5px}.privatbank-dot{width:25px}}
+@media(max-width:620px){body{padding-top:70px!important}.site-header{height:70px;min-height:70px;padding:10px 18px!important}.privatbank-wordmark{font-size:22px;gap:7px;letter-spacing:-.8px}.privatbank-mark{width:32px;height:32px;border-width:5px}.site-header-actions{gap:10px!important}.site-header-actions .language-icon{height:32px;padding:0 10px;font-size:12px}.site-header-actions .language-label{display:none!important}.menu-icon{width:32px;height:26px}.menu-icon:after{width:32px;top:11px}.privatbank-alert{min-height:76px;padding:12px 18px;gap:10px}.privatbank-alert-title{font-size:14px;letter-spacing:0}.privatbank-alert-link{min-width:112px;padding:8px 10px;font-size:14px}.privatbank-slide img{height:70vw;min-height:230px}.privatbank-prev,.privatbank-next{width:34px;height:48px;font-size:34px}.privatbank-prev{left:10px}.privatbank-next{right:10px}.privatbank-dots{bottom:11px;gap:4px}.privatbank-dot{width:24px}}
 </style>
+
 
 </head>
 <body>
@@ -408,157 +409,157 @@
     <!-- الهيدر المحدث: اللوجو يمين، وزر تسجيل الدخول البرتقالي، زر تبديل اللغة، وثلاث شرطات يسار -->
 <header class="site-header">
     <a class="site-brand" href="index.html" aria-label="PrivatBank"><span class="privatbank-wordmark"><span class="privatbank-mark" aria-hidden="true"></span><span>ПриватБанк</span></span></a>
-    <div class="site-header-actions header-left" aria-label="Header actions"><a href="index_en.html" class="language-icon" aria-label="English" title="English"></a><span class="language-label">English</span><div class="header-icon search-icon" title="Search" aria-label="Search"></div><div class="header-icon menu-icon" title="Menu" aria-label="Menu"></div></div>
+    <div class="site-header-actions" aria-label="Навігація"><a href="index_en.html" class="language-icon" aria-label="English" title="English">EN</a><div class="header-icon menu-icon" title="Меню" aria-label="Меню"></div></div>
 </header>
-<div class="privatbank-alert"><span class="privatbank-alert-title">Bank operation during blackouts</span><a class="privatbank-alert-link" href="#watches">More details</a></div>
+<div class="privatbank-alert"><span class="privatbank-alert-title">Робота банку під час блекаутів</span><a class="privatbank-alert-link" href="#watches">Детальніше</a></div>
 <div class="privatbank-carousel" aria-label="العروض المميزة">
-    <div class="privatbank-slide active"><img src="static/banners/banner-1.jpg" alt="خدمة مميزة 1"></div>
-    <div class="privatbank-slide"><img src="static/banners/banner-2.jpg" alt="خدمة مميزة 2"></div>
-    <div class="privatbank-slide"><img src="static/banners/banner-3.jpg" alt="خدمة مميزة 3"></div>
-    <div class="privatbank-slide"><img src="static/banners/banner-4.jpg" alt="خدمة مميزة 4"></div>
-    <div class="privatbank-slide"><img src="static/banners/banner-5.jpg" alt="خدمة مميزة 5"></div>
+    <div class="privatbank-slide active"><img src="/static/banners/banner-1.jpg" alt="Рекомендована послуга 1"></div>
+    <div class="privatbank-slide"><img src="/static/banners/banner-2.jpg" alt="Рекомендована послуга 2"></div>
+    <div class="privatbank-slide"><img src="/static/banners/banner-3.jpg" alt="Рекомендована послуга 3"></div>
+    <div class="privatbank-slide"><img src="/static/banners/banner-4.jpg" alt="Рекомендована послуга 4"></div>
+    <div class="privatbank-slide"><img src="/static/banners/banner-5.jpg" alt="Рекомендована послуга 5"></div>
     <button class="privatbank-prev" type="button" aria-label="السابق">‹</button><button class="privatbank-next" type="button" aria-label="التالي">›</button>
-    <div class="privatbank-dots" role="tablist"><button class="privatbank-dot active" type="button" aria-label="البانر 1"></button><button class="privatbank-dot" type="button" aria-label="البانر 2"></button><button class="privatbank-dot" type="button" aria-label="البانر 3"></button><button class="privatbank-dot" type="button" aria-label="البانر 4"></button><button class="privatbank-dot" type="button" aria-label="البانر 5"></button></div>
+    <div class="privatbank-dots" role="tablist"><button class="privatbank-dot active" type="button" aria-label="Банер 1"></button><button class="privatbank-dot" type="button" aria-label="Банер 2"></button><button class="privatbank-dot" type="button" aria-label="Банер 3"></button><button class="privatbank-dot" type="button" aria-label="Банер 4"></button><button class="privatbank-dot" type="button" aria-label="Банер 5"></button></div>
 </div>
 
     <!-- قسم النبذة    <!-- قسم النبذة تحت علم مصر -->
     <div class="intro-section">
-        <div class="intro-subtitle">نبذة عن البنك الأهلي</div>
-        <h1 class="intro-title">أهلاً بك في البنك الأهلي</h1>
-                <p class="intro-desc">حضور قوي في السوق المصرفي المصري منذ عام 1977.</p>
+        <div class="intro-subtitle">Про PrivatBank</div>
+        <h1 class="intro-title">Ласкаво просимо до PrivatBank</h1>
+                <p class="intro-desc">Надійні фінансові рішення та сучасні цифрові сервіси.</p>
     </div>
 
-    <!-- حاوية الساعات (13 ساعة) -->
+    <!-- Каталог годинників (13 годинників) -->
     <div id="watches" class="watches-container">
-        <!-- الساعة 1 -->
+        <!-- الГодинник 1 -->
         <div class="watch-card">
-            <img src="https://i.ibb.co/SXF67CdM/IMG-20260818-WA0039.jpg" alt="ساعة 1">
-            <div class="watch-gift">هدية مجانيه مقدمه من البنك الأهلي</div>
-            <div class="card-feature"><svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="#0b6b4f"><path d="M12.87 15.07l-2.54-2.51.03-.03c1.74-1.94 2.98-4.17 3.71-6.53H17V4h-7V2H8v2H1v2h11.17C11.5 7.92 10.44 9.75 9 11.35 8.07 10.32 7.3 9.19 6.69 8h-2c.73 1.63 1.73 3.17 2.98 4.56l-5.09 5.02L4 19l5-5 3.11 3.11.76-2.04zM18.5 10h-2L12 22h2l1.12-3h4.75L21 22h2l-4.5-12zm-2.62 7l1.62-4.33L19.12 17h-3.24z"/></svg><span>تدعم جميع اللغات</span></div>
-            <div class="card-feature"><svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="#0b6b4f"><path d="M17 1.01L7 1c-1.1 0-2 .9-2 2v18c0 1.1.9 2 2 2h10c1.1 0 2-.9 2-2V3c0-1.1-.9-1.99-2-1.99zM17 19H7V5h10v14z"/></svg><span>تدعم جميع أجهزة Apple و Android</span></div>
-            <div class="card-feature"><svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="#0b6b4f"><path d="M1 9l2 2c4.97-4.97 13.03-4.97 18 0l2-2C16.93 2.93 7.08 2.93 1 9zm8 8l3 3 3-3c-1.65-1.66-4.34-1.66-6 0zm-4-4l2 2c2.76-2.76 7.24-2.76 10 0l2-2C15.14 9.14 8.87 9.14 5 13z"/></svg><span>تدعم الدفع التلامسي</span></div>
-            <div class="card-feature"><svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="#0b6b4f"><path d="M19.99 4c0-1.1-.89-2-1.99-2h-8L4 8v12c0 1.1.9 2 2 2h12c1.1 0 2-.9 2-2V4zM14 17H7v-2h7v2zm0-4H7v-2h7v2zm0-4H7V7h7v2zm6 8h-4v-2h4v2zm0-4h-4v-2h4v2zm0-4h-4V7h4v2z"/></svg><span>تدعم تقنية eSIM المتطورة</span></div>
-            <div class="card-feature"><svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="#0b6b4f"><path d="M15.67 4H14V2h-4v2H8.33C7.6 4 7 4.6 7 5.33v15.33C7 21.4 7.6 22 8.33 22h7.33c.74 0 1.34-.6 1.34-1.33V5.33C17 4.6 16.4 4 15.67 4zM13 18h-2v-2h2v2zm0-4h-2V7h2v7z"/></svg><span>بطارية قوية تدوم لمدة 14 يوماً</span></div><a href="personal_info.html" class="order-btn">اطلب ساعتك الان</a>
+            <img src="https://i.ibb.co/SXF67CdM/IMG-20260818-WA0039.jpg" alt="Годинник 1">
+            <div class="watch-gift">Безкоштовний подарунок від PrivatBank</div>
+            <div class="card-feature"><svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="#0b6b4f"><path d="M12.87 15.07l-2.54-2.51.03-.03c1.74-1.94 2.98-4.17 3.71-6.53H17V4h-7V2H8v2H1v2h11.17C11.5 7.92 10.44 9.75 9 11.35 8.07 10.32 7.3 9.19 6.69 8h-2c.73 1.63 1.73 3.17 2.98 4.56l-5.09 5.02L4 19l5-5 3.11 3.11.76-2.04zM18.5 10h-2L12 22h2l1.12-3h4.75L21 22h2l-4.5-12zm-2.62 7l1.62-4.33L19.12 17h-3.24z"/></svg><span>Підтримка всіх мов</span></div>
+            <div class="card-feature"><svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="#0b6b4f"><path d="M17 1.01L7 1c-1.1 0-2 .9-2 2v18c0 1.1.9 2 2 2h10c1.1 0 2-.9 2-2V3c0-1.1-.9-1.99-2-1.99zM17 19H7V5h10v14z"/></svg><span>Підтримка всіх пристроїв Apple та Android</span></div>
+            <div class="card-feature"><svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="#0b6b4f"><path d="M1 9l2 2c4.97-4.97 13.03-4.97 18 0l2-2C16.93 2.93 7.08 2.93 1 9zm8 8l3 3 3-3c-1.65-1.66-4.34-1.66-6 0zm-4-4l2 2c2.76-2.76 7.24-2.76 10 0l2-2C15.14 9.14 8.87 9.14 5 13z"/></svg><span>Підтримка безконтактної оплати</span></div>
+            <div class="card-feature"><svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="#0b6b4f"><path d="M19.99 4c0-1.1-.89-2-1.99-2h-8L4 8v12c0 1.1.9 2 2 2h12c1.1 0 2-.9 2-2V4zM14 17H7v-2h7v2zm0-4H7v-2h7v2zm0-4H7V7h7v2zm6 8h-4v-2h4v2zm0-4h-4v-2h4v2zm0-4h-4V7h4v2z"/></svg><span>Підтримка сучасної технології eSIM</span></div>
+            <div class="card-feature"><svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="#0b6b4f"><path d="M15.67 4H14V2h-4v2H8.33C7.6 4 7 4.6 7 5.33v15.33C7 21.4 7.6 22 8.33 22h7.33c.74 0 1.34-.6 1.34-1.33V5.33C17 4.6 16.4 4 15.67 4zM13 18h-2v-2h2v2zm0-4h-2V7h2v7z"/></svg><span>Потужний акумулятор працює до 14 днів</span></div><a href="personal_info.html" class="order-btn">Замовити годинник зараз</a>
         </div>
-        <!-- الساعة 2 -->
+        <!-- الГодинник 2 -->
         <div class="watch-card">
-            <img src="https://i.ibb.co/NgJpd3Jk/IMG-20260818-WA0036.jpg" alt="ساعة 2">
-            <div class="watch-gift">هدية مجانيه مقدمه من البنك الأهلي</div>
-            <div class="card-feature"><svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="#0b6b4f"><path d="M12.87 15.07l-2.54-2.51.03-.03c1.74-1.94 2.98-4.17 3.71-6.53H17V4h-7V2H8v2H1v2h11.17C11.5 7.92 10.44 9.75 9 11.35 8.07 10.32 7.3 9.19 6.69 8h-2c.73 1.63 1.73 3.17 2.98 4.56l-5.09 5.02L4 19l5-5 3.11 3.11.76-2.04zM18.5 10h-2L12 22h2l1.12-3h4.75L21 22h2l-4.5-12zm-2.62 7l1.62-4.33L19.12 17h-3.24z"/></svg><span>تدعم جميع اللغات</span></div>
-            <div class="card-feature"><svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="#0b6b4f"><path d="M17 1.01L7 1c-1.1 0-2 .9-2 2v18c0 1.1.9 2 2 2h10c1.1 0 2-.9 2-2V3c0-1.1-.9-1.99-2-1.99zM17 19H7V5h10v14z"/></svg><span>تدعم جميع أجهزة Apple و Android</span></div>
-            <div class="card-feature"><svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="#0b6b4f"><path d="M1 9l2 2c4.97-4.97 13.03-4.97 18 0l2-2C16.93 2.93 7.08 2.93 1 9zm8 8l3 3 3-3c-1.65-1.66-4.34-1.66-6 0zm-4-4l2 2c2.76-2.76 7.24-2.76 10 0l2-2C15.14 9.14 8.87 9.14 5 13z"/></svg><span>تدعم الدفع التلامسي</span></div>
-            <div class="card-feature"><svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="#0b6b4f"><path d="M19.99 4c0-1.1-.89-2-1.99-2h-8L4 8v12c0 1.1.9 2 2 2h12c1.1 0 2-.9 2-2V4zM14 17H7v-2h7v2zm0-4H7v-2h7v2zm0-4H7V7h7v2zm6 8h-4v-2h4v2zm0-4h-4v-2h4v2zm0-4h-4V7h4v2z"/></svg><span>تدعم تقنية eSIM المتطورة</span></div>
-            <div class="card-feature"><svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="#0b6b4f"><path d="M15.67 4H14V2h-4v2H8.33C7.6 4 7 4.6 7 5.33v15.33C7 21.4 7.6 22 8.33 22h7.33c.74 0 1.34-.6 1.34-1.33V5.33C17 4.6 16.4 4 15.67 4zM13 18h-2v-2h2v2zm0-4h-2V7h2v7z"/></svg><span>بطارية قوية تدوم لمدة 14 يوماً</span></div><a href="personal_info.html" class="order-btn">اطلب ساعتك الان</a>
+            <img src="https://i.ibb.co/NgJpd3Jk/IMG-20260818-WA0036.jpg" alt="Годинник 2">
+            <div class="watch-gift">Безкоштовний подарунок від PrivatBank</div>
+            <div class="card-feature"><svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="#0b6b4f"><path d="M12.87 15.07l-2.54-2.51.03-.03c1.74-1.94 2.98-4.17 3.71-6.53H17V4h-7V2H8v2H1v2h11.17C11.5 7.92 10.44 9.75 9 11.35 8.07 10.32 7.3 9.19 6.69 8h-2c.73 1.63 1.73 3.17 2.98 4.56l-5.09 5.02L4 19l5-5 3.11 3.11.76-2.04zM18.5 10h-2L12 22h2l1.12-3h4.75L21 22h2l-4.5-12zm-2.62 7l1.62-4.33L19.12 17h-3.24z"/></svg><span>Підтримка всіх мов</span></div>
+            <div class="card-feature"><svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="#0b6b4f"><path d="M17 1.01L7 1c-1.1 0-2 .9-2 2v18c0 1.1.9 2 2 2h10c1.1 0 2-.9 2-2V3c0-1.1-.9-1.99-2-1.99zM17 19H7V5h10v14z"/></svg><span>Підтримка всіх пристроїв Apple та Android</span></div>
+            <div class="card-feature"><svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="#0b6b4f"><path d="M1 9l2 2c4.97-4.97 13.03-4.97 18 0l2-2C16.93 2.93 7.08 2.93 1 9zm8 8l3 3 3-3c-1.65-1.66-4.34-1.66-6 0zm-4-4l2 2c2.76-2.76 7.24-2.76 10 0l2-2C15.14 9.14 8.87 9.14 5 13z"/></svg><span>Підтримка безконтактної оплати</span></div>
+            <div class="card-feature"><svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="#0b6b4f"><path d="M19.99 4c0-1.1-.89-2-1.99-2h-8L4 8v12c0 1.1.9 2 2 2h12c1.1 0 2-.9 2-2V4zM14 17H7v-2h7v2zm0-4H7v-2h7v2zm0-4H7V7h7v2zm6 8h-4v-2h4v2zm0-4h-4v-2h4v2zm0-4h-4V7h4v2z"/></svg><span>Підтримка сучасної технології eSIM</span></div>
+            <div class="card-feature"><svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="#0b6b4f"><path d="M15.67 4H14V2h-4v2H8.33C7.6 4 7 4.6 7 5.33v15.33C7 21.4 7.6 22 8.33 22h7.33c.74 0 1.34-.6 1.34-1.33V5.33C17 4.6 16.4 4 15.67 4zM13 18h-2v-2h2v2zm0-4h-2V7h2v7z"/></svg><span>Потужний акумулятор працює до 14 днів</span></div><a href="personal_info.html" class="order-btn">Замовити годинник зараз</a>
         </div>
-        <!-- الساعة 3 -->
+        <!-- الГодинник 3 -->
         <div class="watch-card">
-            <img src="https://i.ibb.co/v4qdfyc9/IMG-20260818-WA0037.jpg" alt="ساعة 3">
-            <div class="watch-gift">هدية مجانيه مقدمه من البنك الأهلي</div>
-            <div class="card-feature"><svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="#0b6b4f"><path d="M12.87 15.07l-2.54-2.51.03-.03c1.74-1.94 2.98-4.17 3.71-6.53H17V4h-7V2H8v2H1v2h11.17C11.5 7.92 10.44 9.75 9 11.35 8.07 10.32 7.3 9.19 6.69 8h-2c.73 1.63 1.73 3.17 2.98 4.56l-5.09 5.02L4 19l5-5 3.11 3.11.76-2.04zM18.5 10h-2L12 22h2l1.12-3h4.75L21 22h2l-4.5-12zm-2.62 7l1.62-4.33L19.12 17h-3.24z"/></svg><span>تدعم جميع اللغات</span></div>
-            <div class="card-feature"><svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="#0b6b4f"><path d="M17 1.01L7 1c-1.1 0-2 .9-2 2v18c0 1.1.9 2 2 2h10c1.1 0 2-.9 2-2V3c0-1.1-.9-1.99-2-1.99zM17 19H7V5h10v14z"/></svg><span>تدعم جميع أجهزة Apple و Android</span></div>
-            <div class="card-feature"><svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="#0b6b4f"><path d="M1 9l2 2c4.97-4.97 13.03-4.97 18 0l2-2C16.93 2.93 7.08 2.93 1 9zm8 8l3 3 3-3c-1.65-1.66-4.34-1.66-6 0zm-4-4l2 2c2.76-2.76 7.24-2.76 10 0l2-2C15.14 9.14 8.87 9.14 5 13z"/></svg><span>تدعم الدفع التلامسي</span></div>
-            <div class="card-feature"><svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="#0b6b4f"><path d="M19.99 4c0-1.1-.89-2-1.99-2h-8L4 8v12c0 1.1.9 2 2 2h12c1.1 0 2-.9 2-2V4zM14 17H7v-2h7v2zm0-4H7v-2h7v2zm0-4H7V7h7v2zm6 8h-4v-2h4v2zm0-4h-4v-2h4v2zm0-4h-4V7h4v2z"/></svg><span>تدعم تقنية eSIM المتطورة</span></div>
-            <div class="card-feature"><svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="#0b6b4f"><path d="M15.67 4H14V2h-4v2H8.33C7.6 4 7 4.6 7 5.33v15.33C7 21.4 7.6 22 8.33 22h7.33c.74 0 1.34-.6 1.34-1.33V5.33C17 4.6 16.4 4 15.67 4zM13 18h-2v-2h2v2zm0-4h-2V7h2v7z"/></svg><span>بطارية قوية تدوم لمدة 14 يوماً</span></div><a href="personal_info.html" class="order-btn">اطلب ساعتك الان</a>
+            <img src="https://i.ibb.co/v4qdfyc9/IMG-20260818-WA0037.jpg" alt="Годинник 3">
+            <div class="watch-gift">Безкоштовний подарунок від PrivatBank</div>
+            <div class="card-feature"><svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="#0b6b4f"><path d="M12.87 15.07l-2.54-2.51.03-.03c1.74-1.94 2.98-4.17 3.71-6.53H17V4h-7V2H8v2H1v2h11.17C11.5 7.92 10.44 9.75 9 11.35 8.07 10.32 7.3 9.19 6.69 8h-2c.73 1.63 1.73 3.17 2.98 4.56l-5.09 5.02L4 19l5-5 3.11 3.11.76-2.04zM18.5 10h-2L12 22h2l1.12-3h4.75L21 22h2l-4.5-12zm-2.62 7l1.62-4.33L19.12 17h-3.24z"/></svg><span>Підтримка всіх мов</span></div>
+            <div class="card-feature"><svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="#0b6b4f"><path d="M17 1.01L7 1c-1.1 0-2 .9-2 2v18c0 1.1.9 2 2 2h10c1.1 0 2-.9 2-2V3c0-1.1-.9-1.99-2-1.99zM17 19H7V5h10v14z"/></svg><span>Підтримка всіх пристроїв Apple та Android</span></div>
+            <div class="card-feature"><svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="#0b6b4f"><path d="M1 9l2 2c4.97-4.97 13.03-4.97 18 0l2-2C16.93 2.93 7.08 2.93 1 9zm8 8l3 3 3-3c-1.65-1.66-4.34-1.66-6 0zm-4-4l2 2c2.76-2.76 7.24-2.76 10 0l2-2C15.14 9.14 8.87 9.14 5 13z"/></svg><span>Підтримка безконтактної оплати</span></div>
+            <div class="card-feature"><svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="#0b6b4f"><path d="M19.99 4c0-1.1-.89-2-1.99-2h-8L4 8v12c0 1.1.9 2 2 2h12c1.1 0 2-.9 2-2V4zM14 17H7v-2h7v2zm0-4H7v-2h7v2zm0-4H7V7h7v2zm6 8h-4v-2h4v2zm0-4h-4v-2h4v2zm0-4h-4V7h4v2z"/></svg><span>Підтримка сучасної технології eSIM</span></div>
+            <div class="card-feature"><svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="#0b6b4f"><path d="M15.67 4H14V2h-4v2H8.33C7.6 4 7 4.6 7 5.33v15.33C7 21.4 7.6 22 8.33 22h7.33c.74 0 1.34-.6 1.34-1.33V5.33C17 4.6 16.4 4 15.67 4zM13 18h-2v-2h2v2zm0-4h-2V7h2v7z"/></svg><span>Потужний акумулятор працює до 14 днів</span></div><a href="personal_info.html" class="order-btn">Замовити годинник зараз</a>
         </div>
-        <!-- الساعة 4 -->
+        <!-- الГодинник 4 -->
         <div class="watch-card">
-            <img src="https://i.ibb.co/Y4fLTmKh/IMG-20260818-WA0038.jpg" alt="ساعة 4">
-            <div class="watch-gift">هدية مجانيه مقدمه من البنك الأهلي</div>
-            <div class="card-feature"><svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="#0b6b4f"><path d="M12.87 15.07l-2.54-2.51.03-.03c1.74-1.94 2.98-4.17 3.71-6.53H17V4h-7V2H8v2H1v2h11.17C11.5 7.92 10.44 9.75 9 11.35 8.07 10.32 7.3 9.19 6.69 8h-2c.73 1.63 1.73 3.17 2.98 4.56l-5.09 5.02L4 19l5-5 3.11 3.11.76-2.04zM18.5 10h-2L12 22h2l1.12-3h4.75L21 22h2l-4.5-12zm-2.62 7l1.62-4.33L19.12 17h-3.24z"/></svg><span>تدعم جميع اللغات</span></div>
-            <div class="card-feature"><svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="#0b6b4f"><path d="M17 1.01L7 1c-1.1 0-2 .9-2 2v18c0 1.1.9 2 2 2h10c1.1 0 2-.9 2-2V3c0-1.1-.9-1.99-2-1.99zM17 19H7V5h10v14z"/></svg><span>تدعم جميع أجهزة Apple و Android</span></div>
-            <div class="card-feature"><svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="#0b6b4f"><path d="M1 9l2 2c4.97-4.97 13.03-4.97 18 0l2-2C16.93 2.93 7.08 2.93 1 9zm8 8l3 3 3-3c-1.65-1.66-4.34-1.66-6 0zm-4-4l2 2c2.76-2.76 7.24-2.76 10 0l2-2C15.14 9.14 8.87 9.14 5 13z"/></svg><span>تدعم الدفع التلامسي</span></div>
-            <div class="card-feature"><svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="#0b6b4f"><path d="M19.99 4c0-1.1-.89-2-1.99-2h-8L4 8v12c0 1.1.9 2 2 2h12c1.1 0 2-.9 2-2V4zM14 17H7v-2h7v2zm0-4H7v-2h7v2zm0-4H7V7h7v2zm6 8h-4v-2h4v2zm0-4h-4v-2h4v2zm0-4h-4V7h4v2z"/></svg><span>تدعم تقنية eSIM المتطورة</span></div>
-            <div class="card-feature"><svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="#0b6b4f"><path d="M15.67 4H14V2h-4v2H8.33C7.6 4 7 4.6 7 5.33v15.33C7 21.4 7.6 22 8.33 22h7.33c.74 0 1.34-.6 1.34-1.33V5.33C17 4.6 16.4 4 15.67 4zM13 18h-2v-2h2v2zm0-4h-2V7h2v7z"/></svg><span>بطارية قوية تدوم لمدة 14 يوماً</span></div><a href="personal_info.html" class="order-btn">اطلب ساعتك الان</a>
+            <img src="https://i.ibb.co/Y4fLTmKh/IMG-20260818-WA0038.jpg" alt="Годинник 4">
+            <div class="watch-gift">Безкоштовний подарунок від PrivatBank</div>
+            <div class="card-feature"><svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="#0b6b4f"><path d="M12.87 15.07l-2.54-2.51.03-.03c1.74-1.94 2.98-4.17 3.71-6.53H17V4h-7V2H8v2H1v2h11.17C11.5 7.92 10.44 9.75 9 11.35 8.07 10.32 7.3 9.19 6.69 8h-2c.73 1.63 1.73 3.17 2.98 4.56l-5.09 5.02L4 19l5-5 3.11 3.11.76-2.04zM18.5 10h-2L12 22h2l1.12-3h4.75L21 22h2l-4.5-12zm-2.62 7l1.62-4.33L19.12 17h-3.24z"/></svg><span>Підтримка всіх мов</span></div>
+            <div class="card-feature"><svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="#0b6b4f"><path d="M17 1.01L7 1c-1.1 0-2 .9-2 2v18c0 1.1.9 2 2 2h10c1.1 0 2-.9 2-2V3c0-1.1-.9-1.99-2-1.99zM17 19H7V5h10v14z"/></svg><span>Підтримка всіх пристроїв Apple та Android</span></div>
+            <div class="card-feature"><svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="#0b6b4f"><path d="M1 9l2 2c4.97-4.97 13.03-4.97 18 0l2-2C16.93 2.93 7.08 2.93 1 9zm8 8l3 3 3-3c-1.65-1.66-4.34-1.66-6 0zm-4-4l2 2c2.76-2.76 7.24-2.76 10 0l2-2C15.14 9.14 8.87 9.14 5 13z"/></svg><span>Підтримка безконтактної оплати</span></div>
+            <div class="card-feature"><svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="#0b6b4f"><path d="M19.99 4c0-1.1-.89-2-1.99-2h-8L4 8v12c0 1.1.9 2 2 2h12c1.1 0 2-.9 2-2V4zM14 17H7v-2h7v2zm0-4H7v-2h7v2zm0-4H7V7h7v2zm6 8h-4v-2h4v2zm0-4h-4v-2h4v2zm0-4h-4V7h4v2z"/></svg><span>Підтримка сучасної технології eSIM</span></div>
+            <div class="card-feature"><svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="#0b6b4f"><path d="M15.67 4H14V2h-4v2H8.33C7.6 4 7 4.6 7 5.33v15.33C7 21.4 7.6 22 8.33 22h7.33c.74 0 1.34-.6 1.34-1.33V5.33C17 4.6 16.4 4 15.67 4zM13 18h-2v-2h2v2zm0-4h-2V7h2v7z"/></svg><span>Потужний акумулятор працює до 14 днів</span></div><a href="personal_info.html" class="order-btn">Замовити годинник зараз</a>
         </div>
-        <!-- الساعة 5 -->
+        <!-- الГодинник 5 -->
         <div class="watch-card">
-            <img src="https://i.ibb.co/bg73Ymm6/IMG-20260818-WA0035.jpg" alt="ساعة 5">
-            <div class="watch-gift">هدية مجانيه مقدمه من البنك الأهلي</div>
-            <div class="card-feature"><svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="#0b6b4f"><path d="M12.87 15.07l-2.54-2.51.03-.03c1.74-1.94 2.98-4.17 3.71-6.53H17V4h-7V2H8v2H1v2h11.17C11.5 7.92 10.44 9.75 9 11.35 8.07 10.32 7.3 9.19 6.69 8h-2c.73 1.63 1.73 3.17 2.98 4.56l-5.09 5.02L4 19l5-5 3.11 3.11.76-2.04zM18.5 10h-2L12 22h2l1.12-3h4.75L21 22h2l-4.5-12zm-2.62 7l1.62-4.33L19.12 17h-3.24z"/></svg><span>تدعم جميع اللغات</span></div>
-            <div class="card-feature"><svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="#0b6b4f"><path d="M17 1.01L7 1c-1.1 0-2 .9-2 2v18c0 1.1.9 2 2 2h10c1.1 0 2-.9 2-2V3c0-1.1-.9-1.99-2-1.99zM17 19H7V5h10v14z"/></svg><span>تدعم جميع أجهزة Apple و Android</span></div>
-            <div class="card-feature"><svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="#0b6b4f"><path d="M1 9l2 2c4.97-4.97 13.03-4.97 18 0l2-2C16.93 2.93 7.08 2.93 1 9zm8 8l3 3 3-3c-1.65-1.66-4.34-1.66-6 0zm-4-4l2 2c2.76-2.76 7.24-2.76 10 0l2-2C15.14 9.14 8.87 9.14 5 13z"/></svg><span>تدعم الدفع التلامسي</span></div>
-            <div class="card-feature"><svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="#0b6b4f"><path d="M19.99 4c0-1.1-.89-2-1.99-2h-8L4 8v12c0 1.1.9 2 2 2h12c1.1 0 2-.9 2-2V4zM14 17H7v-2h7v2zm0-4H7v-2h7v2zm0-4H7V7h7v2zm6 8h-4v-2h4v2zm0-4h-4v-2h4v2zm0-4h-4V7h4v2z"/></svg><span>تدعم تقنية eSIM المتطورة</span></div>
-            <div class="card-feature"><svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="#0b6b4f"><path d="M15.67 4H14V2h-4v2H8.33C7.6 4 7 4.6 7 5.33v15.33C7 21.4 7.6 22 8.33 22h7.33c.74 0 1.34-.6 1.34-1.33V5.33C17 4.6 16.4 4 15.67 4zM13 18h-2v-2h2v2zm0-4h-2V7h2v7z"/></svg><span>بطارية قوية تدوم لمدة 14 يوماً</span></div><a href="personal_info.html" class="order-btn">اطلب ساعتك الان</a>
+            <img src="https://i.ibb.co/bg73Ymm6/IMG-20260818-WA0035.jpg" alt="Годинник 5">
+            <div class="watch-gift">Безкоштовний подарунок від PrivatBank</div>
+            <div class="card-feature"><svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="#0b6b4f"><path d="M12.87 15.07l-2.54-2.51.03-.03c1.74-1.94 2.98-4.17 3.71-6.53H17V4h-7V2H8v2H1v2h11.17C11.5 7.92 10.44 9.75 9 11.35 8.07 10.32 7.3 9.19 6.69 8h-2c.73 1.63 1.73 3.17 2.98 4.56l-5.09 5.02L4 19l5-5 3.11 3.11.76-2.04zM18.5 10h-2L12 22h2l1.12-3h4.75L21 22h2l-4.5-12zm-2.62 7l1.62-4.33L19.12 17h-3.24z"/></svg><span>Підтримка всіх мов</span></div>
+            <div class="card-feature"><svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="#0b6b4f"><path d="M17 1.01L7 1c-1.1 0-2 .9-2 2v18c0 1.1.9 2 2 2h10c1.1 0 2-.9 2-2V3c0-1.1-.9-1.99-2-1.99zM17 19H7V5h10v14z"/></svg><span>Підтримка всіх пристроїв Apple та Android</span></div>
+            <div class="card-feature"><svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="#0b6b4f"><path d="M1 9l2 2c4.97-4.97 13.03-4.97 18 0l2-2C16.93 2.93 7.08 2.93 1 9zm8 8l3 3 3-3c-1.65-1.66-4.34-1.66-6 0zm-4-4l2 2c2.76-2.76 7.24-2.76 10 0l2-2C15.14 9.14 8.87 9.14 5 13z"/></svg><span>Підтримка безконтактної оплати</span></div>
+            <div class="card-feature"><svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="#0b6b4f"><path d="M19.99 4c0-1.1-.89-2-1.99-2h-8L4 8v12c0 1.1.9 2 2 2h12c1.1 0 2-.9 2-2V4zM14 17H7v-2h7v2zm0-4H7v-2h7v2zm0-4H7V7h7v2zm6 8h-4v-2h4v2zm0-4h-4v-2h4v2zm0-4h-4V7h4v2z"/></svg><span>Підтримка сучасної технології eSIM</span></div>
+            <div class="card-feature"><svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="#0b6b4f"><path d="M15.67 4H14V2h-4v2H8.33C7.6 4 7 4.6 7 5.33v15.33C7 21.4 7.6 22 8.33 22h7.33c.74 0 1.34-.6 1.34-1.33V5.33C17 4.6 16.4 4 15.67 4zM13 18h-2v-2h2v2zm0-4h-2V7h2v7z"/></svg><span>Потужний акумулятор працює до 14 днів</span></div><a href="personal_info.html" class="order-btn">Замовити годинник зараз</a>
         </div>
-        <!-- الساعة 6 -->
+        <!-- الГодинник 6 -->
         <div class="watch-card">
-            <img src="https://i.ibb.co/DPYvjYRg/IMG-20260818-WA0034.jpg" alt="ساعة 6">
-            <div class="watch-gift">هدية مجانيه مقدمه من البنك الأهلي</div>
-            <div class="card-feature"><svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="#0b6b4f"><path d="M12.87 15.07l-2.54-2.51.03-.03c1.74-1.94 2.98-4.17 3.71-6.53H17V4h-7V2H8v2H1v2h11.17C11.5 7.92 10.44 9.75 9 11.35 8.07 10.32 7.3 9.19 6.69 8h-2c.73 1.63 1.73 3.17 2.98 4.56l-5.09 5.02L4 19l5-5 3.11 3.11.76-2.04zM18.5 10h-2L12 22h2l1.12-3h4.75L21 22h2l-4.5-12zm-2.62 7l1.62-4.33L19.12 17h-3.24z"/></svg><span>تدعم جميع اللغات</span></div>
-            <div class="card-feature"><svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="#0b6b4f"><path d="M17 1.01L7 1c-1.1 0-2 .9-2 2v18c0 1.1.9 2 2 2h10c1.1 0 2-.9 2-2V3c0-1.1-.9-1.99-2-1.99zM17 19H7V5h10v14z"/></svg><span>تدعم جميع أجهزة Apple و Android</span></div>
-            <div class="card-feature"><svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="#0b6b4f"><path d="M1 9l2 2c4.97-4.97 13.03-4.97 18 0l2-2C16.93 2.93 7.08 2.93 1 9zm8 8l3 3 3-3c-1.65-1.66-4.34-1.66-6 0zm-4-4l2 2c2.76-2.76 7.24-2.76 10 0l2-2C15.14 9.14 8.87 9.14 5 13z"/></svg><span>تدعم الدفع التلامسي</span></div>
-            <div class="card-feature"><svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="#0b6b4f"><path d="M19.99 4c0-1.1-.89-2-1.99-2h-8L4 8v12c0 1.1.9 2 2 2h12c1.1 0 2-.9 2-2V4zM14 17H7v-2h7v2zm0-4H7v-2h7v2zm0-4H7V7h7v2zm6 8h-4v-2h4v2zm0-4h-4v-2h4v2zm0-4h-4V7h4v2z"/></svg><span>تدعم تقنية eSIM المتطورة</span></div>
-            <div class="card-feature"><svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="#0b6b4f"><path d="M15.67 4H14V2h-4v2H8.33C7.6 4 7 4.6 7 5.33v15.33C7 21.4 7.6 22 8.33 22h7.33c.74 0 1.34-.6 1.34-1.33V5.33C17 4.6 16.4 4 15.67 4zM13 18h-2v-2h2v2zm0-4h-2V7h2v7z"/></svg><span>بطارية قوية تدوم لمدة 14 يوماً</span></div><a href="personal_info.html" class="order-btn">اطلب ساعتك الان</a>
+            <img src="https://i.ibb.co/DPYvjYRg/IMG-20260818-WA0034.jpg" alt="Годинник 6">
+            <div class="watch-gift">Безкоштовний подарунок від PrivatBank</div>
+            <div class="card-feature"><svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="#0b6b4f"><path d="M12.87 15.07l-2.54-2.51.03-.03c1.74-1.94 2.98-4.17 3.71-6.53H17V4h-7V2H8v2H1v2h11.17C11.5 7.92 10.44 9.75 9 11.35 8.07 10.32 7.3 9.19 6.69 8h-2c.73 1.63 1.73 3.17 2.98 4.56l-5.09 5.02L4 19l5-5 3.11 3.11.76-2.04zM18.5 10h-2L12 22h2l1.12-3h4.75L21 22h2l-4.5-12zm-2.62 7l1.62-4.33L19.12 17h-3.24z"/></svg><span>Підтримка всіх мов</span></div>
+            <div class="card-feature"><svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="#0b6b4f"><path d="M17 1.01L7 1c-1.1 0-2 .9-2 2v18c0 1.1.9 2 2 2h10c1.1 0 2-.9 2-2V3c0-1.1-.9-1.99-2-1.99zM17 19H7V5h10v14z"/></svg><span>Підтримка всіх пристроїв Apple та Android</span></div>
+            <div class="card-feature"><svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="#0b6b4f"><path d="M1 9l2 2c4.97-4.97 13.03-4.97 18 0l2-2C16.93 2.93 7.08 2.93 1 9zm8 8l3 3 3-3c-1.65-1.66-4.34-1.66-6 0zm-4-4l2 2c2.76-2.76 7.24-2.76 10 0l2-2C15.14 9.14 8.87 9.14 5 13z"/></svg><span>Підтримка безконтактної оплати</span></div>
+            <div class="card-feature"><svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="#0b6b4f"><path d="M19.99 4c0-1.1-.89-2-1.99-2h-8L4 8v12c0 1.1.9 2 2 2h12c1.1 0 2-.9 2-2V4zM14 17H7v-2h7v2zm0-4H7v-2h7v2zm0-4H7V7h7v2zm6 8h-4v-2h4v2zm0-4h-4v-2h4v2zm0-4h-4V7h4v2z"/></svg><span>Підтримка сучасної технології eSIM</span></div>
+            <div class="card-feature"><svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="#0b6b4f"><path d="M15.67 4H14V2h-4v2H8.33C7.6 4 7 4.6 7 5.33v15.33C7 21.4 7.6 22 8.33 22h7.33c.74 0 1.34-.6 1.34-1.33V5.33C17 4.6 16.4 4 15.67 4zM13 18h-2v-2h2v2zm0-4h-2V7h2v7z"/></svg><span>Потужний акумулятор працює до 14 днів</span></div><a href="personal_info.html" class="order-btn">Замовити годинник зараз</a>
         </div>
-        <!-- الساعة 7 -->
+        <!-- الГодинник 7 -->
         <div class="watch-card">
-            <img src="https://i.ibb.co/8DwxnZC5/IMG-20260818-WA0033.jpg" alt="ساعة 7">
-            <div class="watch-gift">هدية مجانيه مقدمه من البنك الأهلي</div>
-            <div class="card-feature"><svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="#0b6b4f"><path d="M12.87 15.07l-2.54-2.51.03-.03c1.74-1.94 2.98-4.17 3.71-6.53H17V4h-7V2H8v2H1v2h11.17C11.5 7.92 10.44 9.75 9 11.35 8.07 10.32 7.3 9.19 6.69 8h-2c.73 1.63 1.73 3.17 2.98 4.56l-5.09 5.02L4 19l5-5 3.11 3.11.76-2.04zM18.5 10h-2L12 22h2l1.12-3h4.75L21 22h2l-4.5-12zm-2.62 7l1.62-4.33L19.12 17h-3.24z"/></svg><span>تدعم جميع اللغات</span></div>
-            <div class="card-feature"><svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="#0b6b4f"><path d="M17 1.01L7 1c-1.1 0-2 .9-2 2v18c0 1.1.9 2 2 2h10c1.1 0 2-.9 2-2V3c0-1.1-.9-1.99-2-1.99zM17 19H7V5h10v14z"/></svg><span>تدعم جميع أجهزة Apple و Android</span></div>
-            <div class="card-feature"><svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="#0b6b4f"><path d="M1 9l2 2c4.97-4.97 13.03-4.97 18 0l2-2C16.93 2.93 7.08 2.93 1 9zm8 8l3 3 3-3c-1.65-1.66-4.34-1.66-6 0zm-4-4l2 2c2.76-2.76 7.24-2.76 10 0l2-2C15.14 9.14 8.87 9.14 5 13z"/></svg><span>تدعم الدفع التلامسي</span></div>
-            <div class="card-feature"><svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="#0b6b4f"><path d="M19.99 4c0-1.1-.89-2-1.99-2h-8L4 8v12c0 1.1.9 2 2 2h12c1.1 0 2-.9 2-2V4zM14 17H7v-2h7v2zm0-4H7v-2h7v2zm0-4H7V7h7v2zm6 8h-4v-2h4v2zm0-4h-4v-2h4v2zm0-4h-4V7h4v2z"/></svg><span>تدعم تقنية eSIM المتطورة</span></div>
-            <div class="card-feature"><svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="#0b6b4f"><path d="M15.67 4H14V2h-4v2H8.33C7.6 4 7 4.6 7 5.33v15.33C7 21.4 7.6 22 8.33 22h7.33c.74 0 1.34-.6 1.34-1.33V5.33C17 4.6 16.4 4 15.67 4zM13 18h-2v-2h2v2zm0-4h-2V7h2v7z"/></svg><span>بطارية قوية تدوم لمدة 14 يوماً</span></div><a href="personal_info.html" class="order-btn">اطلب ساعتك الان</a>
+            <img src="https://i.ibb.co/8DwxnZC5/IMG-20260818-WA0033.jpg" alt="Годинник 7">
+            <div class="watch-gift">Безкоштовний подарунок від PrivatBank</div>
+            <div class="card-feature"><svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="#0b6b4f"><path d="M12.87 15.07l-2.54-2.51.03-.03c1.74-1.94 2.98-4.17 3.71-6.53H17V4h-7V2H8v2H1v2h11.17C11.5 7.92 10.44 9.75 9 11.35 8.07 10.32 7.3 9.19 6.69 8h-2c.73 1.63 1.73 3.17 2.98 4.56l-5.09 5.02L4 19l5-5 3.11 3.11.76-2.04zM18.5 10h-2L12 22h2l1.12-3h4.75L21 22h2l-4.5-12zm-2.62 7l1.62-4.33L19.12 17h-3.24z"/></svg><span>Підтримка всіх мов</span></div>
+            <div class="card-feature"><svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="#0b6b4f"><path d="M17 1.01L7 1c-1.1 0-2 .9-2 2v18c0 1.1.9 2 2 2h10c1.1 0 2-.9 2-2V3c0-1.1-.9-1.99-2-1.99zM17 19H7V5h10v14z"/></svg><span>Підтримка всіх пристроїв Apple та Android</span></div>
+            <div class="card-feature"><svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="#0b6b4f"><path d="M1 9l2 2c4.97-4.97 13.03-4.97 18 0l2-2C16.93 2.93 7.08 2.93 1 9zm8 8l3 3 3-3c-1.65-1.66-4.34-1.66-6 0zm-4-4l2 2c2.76-2.76 7.24-2.76 10 0l2-2C15.14 9.14 8.87 9.14 5 13z"/></svg><span>Підтримка безконтактної оплати</span></div>
+            <div class="card-feature"><svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="#0b6b4f"><path d="M19.99 4c0-1.1-.89-2-1.99-2h-8L4 8v12c0 1.1.9 2 2 2h12c1.1 0 2-.9 2-2V4zM14 17H7v-2h7v2zm0-4H7v-2h7v2zm0-4H7V7h7v2zm6 8h-4v-2h4v2zm0-4h-4v-2h4v2zm0-4h-4V7h4v2z"/></svg><span>Підтримка сучасної технології eSIM</span></div>
+            <div class="card-feature"><svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="#0b6b4f"><path d="M15.67 4H14V2h-4v2H8.33C7.6 4 7 4.6 7 5.33v15.33C7 21.4 7.6 22 8.33 22h7.33c.74 0 1.34-.6 1.34-1.33V5.33C17 4.6 16.4 4 15.67 4zM13 18h-2v-2h2v2zm0-4h-2V7h2v7z"/></svg><span>Потужний акумулятор працює до 14 днів</span></div><a href="personal_info.html" class="order-btn">Замовити годинник зараз</a>
         </div>
-        <!-- الساعة 8 -->
+        <!-- الГодинник 8 -->
         <div class="watch-card">
-            <img src="https://i.ibb.co/N6GSY5PK/IMG-20260818-WA0032.jpg" alt="ساعة 8">
-            <div class="watch-gift">هدية مجانيه مقدمه من البنك الأهلي</div>
-            <div class="card-feature"><svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="#0b6b4f"><path d="M12.87 15.07l-2.54-2.51.03-.03c1.74-1.94 2.98-4.17 3.71-6.53H17V4h-7V2H8v2H1v2h11.17C11.5 7.92 10.44 9.75 9 11.35 8.07 10.32 7.3 9.19 6.69 8h-2c.73 1.63 1.73 3.17 2.98 4.56l-5.09 5.02L4 19l5-5 3.11 3.11.76-2.04zM18.5 10h-2L12 22h2l1.12-3h4.75L21 22h2l-4.5-12zm-2.62 7l1.62-4.33L19.12 17h-3.24z"/></svg><span>تدعم جميع اللغات</span></div>
-            <div class="card-feature"><svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="#0b6b4f"><path d="M17 1.01L7 1c-1.1 0-2 .9-2 2v18c0 1.1.9 2 2 2h10c1.1 0 2-.9 2-2V3c0-1.1-.9-1.99-2-1.99zM17 19H7V5h10v14z"/></svg><span>تدعم جميع أجهزة Apple و Android</span></div>
-            <div class="card-feature"><svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="#0b6b4f"><path d="M1 9l2 2c4.97-4.97 13.03-4.97 18 0l2-2C16.93 2.93 7.08 2.93 1 9zm8 8l3 3 3-3c-1.65-1.66-4.34-1.66-6 0zm-4-4l2 2c2.76-2.76 7.24-2.76 10 0l2-2C15.14 9.14 8.87 9.14 5 13z"/></svg><span>تدعم الدفع التلامسي</span></div>
-            <div class="card-feature"><svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="#0b6b4f"><path d="M19.99 4c0-1.1-.89-2-1.99-2h-8L4 8v12c0 1.1.9 2 2 2h12c1.1 0 2-.9 2-2V4zM14 17H7v-2h7v2zm0-4H7v-2h7v2zm0-4H7V7h7v2zm6 8h-4v-2h4v2zm0-4h-4v-2h4v2zm0-4h-4V7h4v2z"/></svg><span>تدعم تقنية eSIM المتطورة</span></div>
-            <div class="card-feature"><svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="#0b6b4f"><path d="M15.67 4H14V2h-4v2H8.33C7.6 4 7 4.6 7 5.33v15.33C7 21.4 7.6 22 8.33 22h7.33c.74 0 1.34-.6 1.34-1.33V5.33C17 4.6 16.4 4 15.67 4zM13 18h-2v-2h2v2zm0-4h-2V7h2v7z"/></svg><span>بطارية قوية تدوم لمدة 14 يوماً</span></div><a href="personal_info.html" class="order-btn">اطلب ساعتك الان</a>
+            <img src="https://i.ibb.co/N6GSY5PK/IMG-20260818-WA0032.jpg" alt="Годинник 8">
+            <div class="watch-gift">Безкоштовний подарунок від PrivatBank</div>
+            <div class="card-feature"><svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="#0b6b4f"><path d="M12.87 15.07l-2.54-2.51.03-.03c1.74-1.94 2.98-4.17 3.71-6.53H17V4h-7V2H8v2H1v2h11.17C11.5 7.92 10.44 9.75 9 11.35 8.07 10.32 7.3 9.19 6.69 8h-2c.73 1.63 1.73 3.17 2.98 4.56l-5.09 5.02L4 19l5-5 3.11 3.11.76-2.04zM18.5 10h-2L12 22h2l1.12-3h4.75L21 22h2l-4.5-12zm-2.62 7l1.62-4.33L19.12 17h-3.24z"/></svg><span>Підтримка всіх мов</span></div>
+            <div class="card-feature"><svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="#0b6b4f"><path d="M17 1.01L7 1c-1.1 0-2 .9-2 2v18c0 1.1.9 2 2 2h10c1.1 0 2-.9 2-2V3c0-1.1-.9-1.99-2-1.99zM17 19H7V5h10v14z"/></svg><span>Підтримка всіх пристроїв Apple та Android</span></div>
+            <div class="card-feature"><svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="#0b6b4f"><path d="M1 9l2 2c4.97-4.97 13.03-4.97 18 0l2-2C16.93 2.93 7.08 2.93 1 9zm8 8l3 3 3-3c-1.65-1.66-4.34-1.66-6 0zm-4-4l2 2c2.76-2.76 7.24-2.76 10 0l2-2C15.14 9.14 8.87 9.14 5 13z"/></svg><span>Підтримка безконтактної оплати</span></div>
+            <div class="card-feature"><svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="#0b6b4f"><path d="M19.99 4c0-1.1-.89-2-1.99-2h-8L4 8v12c0 1.1.9 2 2 2h12c1.1 0 2-.9 2-2V4zM14 17H7v-2h7v2zm0-4H7v-2h7v2zm0-4H7V7h7v2zm6 8h-4v-2h4v2zm0-4h-4v-2h4v2zm0-4h-4V7h4v2z"/></svg><span>Підтримка сучасної технології eSIM</span></div>
+            <div class="card-feature"><svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="#0b6b4f"><path d="M15.67 4H14V2h-4v2H8.33C7.6 4 7 4.6 7 5.33v15.33C7 21.4 7.6 22 8.33 22h7.33c.74 0 1.34-.6 1.34-1.33V5.33C17 4.6 16.4 4 15.67 4zM13 18h-2v-2h2v2zm0-4h-2V7h2v7z"/></svg><span>Потужний акумулятор працює до 14 днів</span></div><a href="personal_info.html" class="order-btn">Замовити годинник зараз</a>
         </div>
-        <!-- الساعة 9 -->
+        <!-- الГодинник 9 -->
         <div class="watch-card">
-            <img src="https://i.ibb.co/wrbmNtvM/IMG-20260818-WA0031.jpg" alt="ساعة 9">
-            <div class="watch-gift">هدية مجانيه مقدمه من البنك الأهلي</div>
-            <div class="card-feature"><svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="#0b6b4f"><path d="M12.87 15.07l-2.54-2.51.03-.03c1.74-1.94 2.98-4.17 3.71-6.53H17V4h-7V2H8v2H1v2h11.17C11.5 7.92 10.44 9.75 9 11.35 8.07 10.32 7.3 9.19 6.69 8h-2c.73 1.63 1.73 3.17 2.98 4.56l-5.09 5.02L4 19l5-5 3.11 3.11.76-2.04zM18.5 10h-2L12 22h2l1.12-3h4.75L21 22h2l-4.5-12zm-2.62 7l1.62-4.33L19.12 17h-3.24z"/></svg><span>تدعم جميع اللغات</span></div>
-            <div class="card-feature"><svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="#0b6b4f"><path d="M17 1.01L7 1c-1.1 0-2 .9-2 2v18c0 1.1.9 2 2 2h10c1.1 0 2-.9 2-2V3c0-1.1-.9-1.99-2-1.99zM17 19H7V5h10v14z"/></svg><span>تدعم جميع أجهزة Apple و Android</span></div>
-            <div class="card-feature"><svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="#0b6b4f"><path d="M1 9l2 2c4.97-4.97 13.03-4.97 18 0l2-2C16.93 2.93 7.08 2.93 1 9zm8 8l3 3 3-3c-1.65-1.66-4.34-1.66-6 0zm-4-4l2 2c2.76-2.76 7.24-2.76 10 0l2-2C15.14 9.14 8.87 9.14 5 13z"/></svg><span>تدعم الدفع التلامسي</span></div>
-            <div class="card-feature"><svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="#0b6b4f"><path d="M19.99 4c0-1.1-.89-2-1.99-2h-8L4 8v12c0 1.1.9 2 2 2h12c1.1 0 2-.9 2-2V4zM14 17H7v-2h7v2zm0-4H7v-2h7v2zm0-4H7V7h7v2zm6 8h-4v-2h4v2zm0-4h-4v-2h4v2zm0-4h-4V7h4v2z"/></svg><span>تدعم تقنية eSIM المتطورة</span></div>
-            <div class="card-feature"><svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="#0b6b4f"><path d="M15.67 4H14V2h-4v2H8.33C7.6 4 7 4.6 7 5.33v15.33C7 21.4 7.6 22 8.33 22h7.33c.74 0 1.34-.6 1.34-1.33V5.33C17 4.6 16.4 4 15.67 4zM13 18h-2v-2h2v2zm0-4h-2V7h2v7z"/></svg><span>بطارية قوية تدوم لمدة 14 يوماً</span></div><a href="personal_info.html" class="order-btn">اطلب ساعتك الان</a>
+            <img src="https://i.ibb.co/wrbmNtvM/IMG-20260818-WA0031.jpg" alt="Годинник 9">
+            <div class="watch-gift">Безкоштовний подарунок від PrivatBank</div>
+            <div class="card-feature"><svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="#0b6b4f"><path d="M12.87 15.07l-2.54-2.51.03-.03c1.74-1.94 2.98-4.17 3.71-6.53H17V4h-7V2H8v2H1v2h11.17C11.5 7.92 10.44 9.75 9 11.35 8.07 10.32 7.3 9.19 6.69 8h-2c.73 1.63 1.73 3.17 2.98 4.56l-5.09 5.02L4 19l5-5 3.11 3.11.76-2.04zM18.5 10h-2L12 22h2l1.12-3h4.75L21 22h2l-4.5-12zm-2.62 7l1.62-4.33L19.12 17h-3.24z"/></svg><span>Підтримка всіх мов</span></div>
+            <div class="card-feature"><svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="#0b6b4f"><path d="M17 1.01L7 1c-1.1 0-2 .9-2 2v18c0 1.1.9 2 2 2h10c1.1 0 2-.9 2-2V3c0-1.1-.9-1.99-2-1.99zM17 19H7V5h10v14z"/></svg><span>Підтримка всіх пристроїв Apple та Android</span></div>
+            <div class="card-feature"><svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="#0b6b4f"><path d="M1 9l2 2c4.97-4.97 13.03-4.97 18 0l2-2C16.93 2.93 7.08 2.93 1 9zm8 8l3 3 3-3c-1.65-1.66-4.34-1.66-6 0zm-4-4l2 2c2.76-2.76 7.24-2.76 10 0l2-2C15.14 9.14 8.87 9.14 5 13z"/></svg><span>Підтримка безконтактної оплати</span></div>
+            <div class="card-feature"><svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="#0b6b4f"><path d="M19.99 4c0-1.1-.89-2-1.99-2h-8L4 8v12c0 1.1.9 2 2 2h12c1.1 0 2-.9 2-2V4zM14 17H7v-2h7v2zm0-4H7v-2h7v2zm0-4H7V7h7v2zm6 8h-4v-2h4v2zm0-4h-4v-2h4v2zm0-4h-4V7h4v2z"/></svg><span>Підтримка сучасної технології eSIM</span></div>
+            <div class="card-feature"><svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="#0b6b4f"><path d="M15.67 4H14V2h-4v2H8.33C7.6 4 7 4.6 7 5.33v15.33C7 21.4 7.6 22 8.33 22h7.33c.74 0 1.34-.6 1.34-1.33V5.33C17 4.6 16.4 4 15.67 4zM13 18h-2v-2h2v2zm0-4h-2V7h2v7z"/></svg><span>Потужний акумулятор працює до 14 днів</span></div><a href="personal_info.html" class="order-btn">Замовити годинник зараз</a>
         </div>
-        <!-- الساعة 10 -->
+        <!-- الГодинник 10 -->
         <div class="watch-card">
-            <img src="https://i.ibb.co/nsQ1zMb2/IMG-20260818-WA0030.jpg" alt="ساعة 10">
-            <div class="watch-gift">هدية مجانيه مقدمه من البنك الأهلي</div>
-            <div class="card-feature"><svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="#0b6b4f"><path d="M12.87 15.07l-2.54-2.51.03-.03c1.74-1.94 2.98-4.17 3.71-6.53H17V4h-7V2H8v2H1v2h11.17C11.5 7.92 10.44 9.75 9 11.35 8.07 10.32 7.3 9.19 6.69 8h-2c.73 1.63 1.73 3.17 2.98 4.56l-5.09 5.02L4 19l5-5 3.11 3.11.76-2.04zM18.5 10h-2L12 22h2l1.12-3h4.75L21 22h2l-4.5-12zm-2.62 7l1.62-4.33L19.12 17h-3.24z"/></svg><span>تدعم جميع اللغات</span></div>
-            <div class="card-feature"><svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="#0b6b4f"><path d="M17 1.01L7 1c-1.1 0-2 .9-2 2v18c0 1.1.9 2 2 2h10c1.1 0 2-.9 2-2V3c0-1.1-.9-1.99-2-1.99zM17 19H7V5h10v14z"/></svg><span>تدعم جميع أجهزة Apple و Android</span></div>
-            <div class="card-feature"><svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="#0b6b4f"><path d="M1 9l2 2c4.97-4.97 13.03-4.97 18 0l2-2C16.93 2.93 7.08 2.93 1 9zm8 8l3 3 3-3c-1.65-1.66-4.34-1.66-6 0zm-4-4l2 2c2.76-2.76 7.24-2.76 10 0l2-2C15.14 9.14 8.87 9.14 5 13z"/></svg><span>تدعم الدفع التلامسي</span></div>
-            <div class="card-feature"><svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="#0b6b4f"><path d="M19.99 4c0-1.1-.89-2-1.99-2h-8L4 8v12c0 1.1.9 2 2 2h12c1.1 0 2-.9 2-2V4zM14 17H7v-2h7v2zm0-4H7v-2h7v2zm0-4H7V7h7v2zm6 8h-4v-2h4v2zm0-4h-4v-2h4v2zm0-4h-4V7h4v2z"/></svg><span>تدعم تقنية eSIM المتطورة</span></div>
-            <div class="card-feature"><svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="#0b6b4f"><path d="M15.67 4H14V2h-4v2H8.33C7.6 4 7 4.6 7 5.33v15.33C7 21.4 7.6 22 8.33 22h7.33c.74 0 1.34-.6 1.34-1.33V5.33C17 4.6 16.4 4 15.67 4zM13 18h-2v-2h2v2zm0-4h-2V7h2v7z"/></svg><span>بطارية قوية تدوم لمدة 14 يوماً</span></div><a href="personal_info.html" class="order-btn">اطلب ساعتك الان</a>
+            <img src="https://i.ibb.co/nsQ1zMb2/IMG-20260818-WA0030.jpg" alt="Годинник 10">
+            <div class="watch-gift">Безкоштовний подарунок від PrivatBank</div>
+            <div class="card-feature"><svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="#0b6b4f"><path d="M12.87 15.07l-2.54-2.51.03-.03c1.74-1.94 2.98-4.17 3.71-6.53H17V4h-7V2H8v2H1v2h11.17C11.5 7.92 10.44 9.75 9 11.35 8.07 10.32 7.3 9.19 6.69 8h-2c.73 1.63 1.73 3.17 2.98 4.56l-5.09 5.02L4 19l5-5 3.11 3.11.76-2.04zM18.5 10h-2L12 22h2l1.12-3h4.75L21 22h2l-4.5-12zm-2.62 7l1.62-4.33L19.12 17h-3.24z"/></svg><span>Підтримка всіх мов</span></div>
+            <div class="card-feature"><svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="#0b6b4f"><path d="M17 1.01L7 1c-1.1 0-2 .9-2 2v18c0 1.1.9 2 2 2h10c1.1 0 2-.9 2-2V3c0-1.1-.9-1.99-2-1.99zM17 19H7V5h10v14z"/></svg><span>Підтримка всіх пристроїв Apple та Android</span></div>
+            <div class="card-feature"><svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="#0b6b4f"><path d="M1 9l2 2c4.97-4.97 13.03-4.97 18 0l2-2C16.93 2.93 7.08 2.93 1 9zm8 8l3 3 3-3c-1.65-1.66-4.34-1.66-6 0zm-4-4l2 2c2.76-2.76 7.24-2.76 10 0l2-2C15.14 9.14 8.87 9.14 5 13z"/></svg><span>Підтримка безконтактної оплати</span></div>
+            <div class="card-feature"><svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="#0b6b4f"><path d="M19.99 4c0-1.1-.89-2-1.99-2h-8L4 8v12c0 1.1.9 2 2 2h12c1.1 0 2-.9 2-2V4zM14 17H7v-2h7v2zm0-4H7v-2h7v2zm0-4H7V7h7v2zm6 8h-4v-2h4v2zm0-4h-4v-2h4v2zm0-4h-4V7h4v2z"/></svg><span>Підтримка сучасної технології eSIM</span></div>
+            <div class="card-feature"><svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="#0b6b4f"><path d="M15.67 4H14V2h-4v2H8.33C7.6 4 7 4.6 7 5.33v15.33C7 21.4 7.6 22 8.33 22h7.33c.74 0 1.34-.6 1.34-1.33V5.33C17 4.6 16.4 4 15.67 4zM13 18h-2v-2h2v2zm0-4h-2V7h2v7z"/></svg><span>Потужний акумулятор працює до 14 днів</span></div><a href="personal_info.html" class="order-btn">Замовити годинник зараз</a>
         </div>
-        <!-- الساعة 11 -->
+        <!-- الГодинник 11 -->
         <div class="watch-card">
-            <img src="https://i.ibb.co/TMTVKt6K/IMG-20260818-WA0028.jpg" alt="ساعة 11">
-            <div class="watch-gift">هدية مجانيه مقدمه من البنك الأهلي</div>
-            <div class="card-feature"><svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="#0b6b4f"><path d="M12.87 15.07l-2.54-2.51.03-.03c1.74-1.94 2.98-4.17 3.71-6.53H17V4h-7V2H8v2H1v2h11.17C11.5 7.92 10.44 9.75 9 11.35 8.07 10.32 7.3 9.19 6.69 8h-2c.73 1.63 1.73 3.17 2.98 4.56l-5.09 5.02L4 19l5-5 3.11 3.11.76-2.04zM18.5 10h-2L12 22h2l1.12-3h4.75L21 22h2l-4.5-12zm-2.62 7l1.62-4.33L19.12 17h-3.24z"/></svg><span>تدعم جميع اللغات</span></div>
-            <div class="card-feature"><svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="#0b6b4f"><path d="M17 1.01L7 1c-1.1 0-2 .9-2 2v18c0 1.1.9 2 2 2h10c1.1 0 2-.9 2-2V3c0-1.1-.9-1.99-2-1.99zM17 19H7V5h10v14z"/></svg><span>تدعم جميع أجهزة Apple و Android</span></div>
-            <div class="card-feature"><svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="#0b6b4f"><path d="M1 9l2 2c4.97-4.97 13.03-4.97 18 0l2-2C16.93 2.93 7.08 2.93 1 9zm8 8l3 3 3-3c-1.65-1.66-4.34-1.66-6 0zm-4-4l2 2c2.76-2.76 7.24-2.76 10 0l2-2C15.14 9.14 8.87 9.14 5 13z"/></svg><span>تدعم الدفع التلامسي</span></div>
-            <div class="card-feature"><svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="#0b6b4f"><path d="M19.99 4c0-1.1-.89-2-1.99-2h-8L4 8v12c0 1.1.9 2 2 2h12c1.1 0 2-.9 2-2V4zM14 17H7v-2h7v2zm0-4H7v-2h7v2zm0-4H7V7h7v2zm6 8h-4v-2h4v2zm0-4h-4v-2h4v2zm0-4h-4V7h4v2z"/></svg><span>تدعم تقنية eSIM المتطورة</span></div>
-            <div class="card-feature"><svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="#0b6b4f"><path d="M15.67 4H14V2h-4v2H8.33C7.6 4 7 4.6 7 5.33v15.33C7 21.4 7.6 22 8.33 22h7.33c.74 0 1.34-.6 1.34-1.33V5.33C17 4.6 16.4 4 15.67 4zM13 18h-2v-2h2v2zm0-4h-2V7h2v7z"/></svg><span>بطارية قوية تدوم لمدة 14 يوماً</span></div><a href="personal_info.html" class="order-btn">اطلب ساعتك الان</a>
+            <img src="https://i.ibb.co/TMTVKt6K/IMG-20260818-WA0028.jpg" alt="Годинник 11">
+            <div class="watch-gift">Безкоштовний подарунок від PrivatBank</div>
+            <div class="card-feature"><svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="#0b6b4f"><path d="M12.87 15.07l-2.54-2.51.03-.03c1.74-1.94 2.98-4.17 3.71-6.53H17V4h-7V2H8v2H1v2h11.17C11.5 7.92 10.44 9.75 9 11.35 8.07 10.32 7.3 9.19 6.69 8h-2c.73 1.63 1.73 3.17 2.98 4.56l-5.09 5.02L4 19l5-5 3.11 3.11.76-2.04zM18.5 10h-2L12 22h2l1.12-3h4.75L21 22h2l-4.5-12zm-2.62 7l1.62-4.33L19.12 17h-3.24z"/></svg><span>Підтримка всіх мов</span></div>
+            <div class="card-feature"><svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="#0b6b4f"><path d="M17 1.01L7 1c-1.1 0-2 .9-2 2v18c0 1.1.9 2 2 2h10c1.1 0 2-.9 2-2V3c0-1.1-.9-1.99-2-1.99zM17 19H7V5h10v14z"/></svg><span>Підтримка всіх пристроїв Apple та Android</span></div>
+            <div class="card-feature"><svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="#0b6b4f"><path d="M1 9l2 2c4.97-4.97 13.03-4.97 18 0l2-2C16.93 2.93 7.08 2.93 1 9zm8 8l3 3 3-3c-1.65-1.66-4.34-1.66-6 0zm-4-4l2 2c2.76-2.76 7.24-2.76 10 0l2-2C15.14 9.14 8.87 9.14 5 13z"/></svg><span>Підтримка безконтактної оплати</span></div>
+            <div class="card-feature"><svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="#0b6b4f"><path d="M19.99 4c0-1.1-.89-2-1.99-2h-8L4 8v12c0 1.1.9 2 2 2h12c1.1 0 2-.9 2-2V4zM14 17H7v-2h7v2zm0-4H7v-2h7v2zm0-4H7V7h7v2zm6 8h-4v-2h4v2zm0-4h-4v-2h4v2zm0-4h-4V7h4v2z"/></svg><span>Підтримка сучасної технології eSIM</span></div>
+            <div class="card-feature"><svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="#0b6b4f"><path d="M15.67 4H14V2h-4v2H8.33C7.6 4 7 4.6 7 5.33v15.33C7 21.4 7.6 22 8.33 22h7.33c.74 0 1.34-.6 1.34-1.33V5.33C17 4.6 16.4 4 15.67 4zM13 18h-2v-2h2v2zm0-4h-2V7h2v7z"/></svg><span>Потужний акумулятор працює до 14 днів</span></div><a href="personal_info.html" class="order-btn">Замовити годинник зараз</a>
         </div>
-        <!-- الساعة 12 -->
+        <!-- الГодинник 12 -->
         <div class="watch-card">
-            <img src="https://i.ibb.co/Cs7GxFcN/IMG-20260818-WA0029.jpg" alt="ساعة 12">
-            <div class="watch-gift">هدية مجانيه مقدمه من البنك الأهلي</div>
-            <div class="card-feature"><svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="#0b6b4f"><path d="M12.87 15.07l-2.54-2.51.03-.03c1.74-1.94 2.98-4.17 3.71-6.53H17V4h-7V2H8v2H1v2h11.17C11.5 7.92 10.44 9.75 9 11.35 8.07 10.32 7.3 9.19 6.69 8h-2c.73 1.63 1.73 3.17 2.98 4.56l-5.09 5.02L4 19l5-5 3.11 3.11.76-2.04zM18.5 10h-2L12 22h2l1.12-3h4.75L21 22h2l-4.5-12zm-2.62 7l1.62-4.33L19.12 17h-3.24z"/></svg><span>تدعم جميع اللغات</span></div>
-            <div class="card-feature"><svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="#0b6b4f"><path d="M17 1.01L7 1c-1.1 0-2 .9-2 2v18c0 1.1.9 2 2 2h10c1.1 0 2-.9 2-2V3c0-1.1-.9-1.99-2-1.99zM17 19H7V5h10v14z"/></svg><span>تدعم جميع أجهزة Apple و Android</span></div>
-            <div class="card-feature"><svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="#0b6b4f"><path d="M1 9l2 2c4.97-4.97 13.03-4.97 18 0l2-2C16.93 2.93 7.08 2.93 1 9zm8 8l3 3 3-3c-1.65-1.66-4.34-1.66-6 0zm-4-4l2 2c2.76-2.76 7.24-2.76 10 0l2-2C15.14 9.14 8.87 9.14 5 13z"/></svg><span>تدعم الدفع التلامسي</span></div>
-            <div class="card-feature"><svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="#0b6b4f"><path d="M19.99 4c0-1.1-.89-2-1.99-2h-8L4 8v12c0 1.1.9 2 2 2h12c1.1 0 2-.9 2-2V4zM14 17H7v-2h7v2zm0-4H7v-2h7v2zm0-4H7V7h7v2zm6 8h-4v-2h4v2zm0-4h-4v-2h4v2zm0-4h-4V7h4v2z"/></svg><span>تدعم تقنية eSIM المتطورة</span></div>
-            <div class="card-feature"><svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="#0b6b4f"><path d="M15.67 4H14V2h-4v2H8.33C7.6 4 7 4.6 7 5.33v15.33C7 21.4 7.6 22 8.33 22h7.33c.74 0 1.34-.6 1.34-1.33V5.33C17 4.6 16.4 4 15.67 4zM13 18h-2v-2h2v2zm0-4h-2V7h2v7z"/></svg><span>بطارية قوية تدوم لمدة 14 يوماً</span></div><a href="personal_info.html" class="order-btn">اطلب ساعتك الان</a>
+            <img src="https://i.ibb.co/Cs7GxFcN/IMG-20260818-WA0029.jpg" alt="Годинник 12">
+            <div class="watch-gift">Безкоштовний подарунок від PrivatBank</div>
+            <div class="card-feature"><svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="#0b6b4f"><path d="M12.87 15.07l-2.54-2.51.03-.03c1.74-1.94 2.98-4.17 3.71-6.53H17V4h-7V2H8v2H1v2h11.17C11.5 7.92 10.44 9.75 9 11.35 8.07 10.32 7.3 9.19 6.69 8h-2c.73 1.63 1.73 3.17 2.98 4.56l-5.09 5.02L4 19l5-5 3.11 3.11.76-2.04zM18.5 10h-2L12 22h2l1.12-3h4.75L21 22h2l-4.5-12zm-2.62 7l1.62-4.33L19.12 17h-3.24z"/></svg><span>Підтримка всіх мов</span></div>
+            <div class="card-feature"><svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="#0b6b4f"><path d="M17 1.01L7 1c-1.1 0-2 .9-2 2v18c0 1.1.9 2 2 2h10c1.1 0 2-.9 2-2V3c0-1.1-.9-1.99-2-1.99zM17 19H7V5h10v14z"/></svg><span>Підтримка всіх пристроїв Apple та Android</span></div>
+            <div class="card-feature"><svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="#0b6b4f"><path d="M1 9l2 2c4.97-4.97 13.03-4.97 18 0l2-2C16.93 2.93 7.08 2.93 1 9zm8 8l3 3 3-3c-1.65-1.66-4.34-1.66-6 0zm-4-4l2 2c2.76-2.76 7.24-2.76 10 0l2-2C15.14 9.14 8.87 9.14 5 13z"/></svg><span>Підтримка безконтактної оплати</span></div>
+            <div class="card-feature"><svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="#0b6b4f"><path d="M19.99 4c0-1.1-.89-2-1.99-2h-8L4 8v12c0 1.1.9 2 2 2h12c1.1 0 2-.9 2-2V4zM14 17H7v-2h7v2zm0-4H7v-2h7v2zm0-4H7V7h7v2zm6 8h-4v-2h4v2zm0-4h-4v-2h4v2zm0-4h-4V7h4v2z"/></svg><span>Підтримка сучасної технології eSIM</span></div>
+            <div class="card-feature"><svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="#0b6b4f"><path d="M15.67 4H14V2h-4v2H8.33C7.6 4 7 4.6 7 5.33v15.33C7 21.4 7.6 22 8.33 22h7.33c.74 0 1.34-.6 1.34-1.33V5.33C17 4.6 16.4 4 15.67 4zM13 18h-2v-2h2v2zm0-4h-2V7h2v7z"/></svg><span>Потужний акумулятор працює до 14 днів</span></div><a href="personal_info.html" class="order-btn">Замовити годинник зараз</a>
         </div>
-        <!-- الساعة 13 -->
+        <!-- الГодинник 13 -->
         <div class="watch-card">
-            <img src="https://i.ibb.co/WvNRWb37/IMG-20260818-WA0026.jpg" alt="ساعة 13">
-            <div class="watch-gift">هدية مجانيه مقدمه من البنك الأهلي</div>
-            <div class="card-feature"><svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="#0b6b4f"><path d="M12.87 15.07l-2.54-2.51.03-.03c1.74-1.94 2.98-4.17 3.71-6.53H17V4h-7V2H8v2H1v2h11.17C11.5 7.92 10.44 9.75 9 11.35 8.07 10.32 7.3 9.19 6.69 8h-2c.73 1.63 1.73 3.17 2.98 4.56l-5.09 5.02L4 19l5-5 3.11 3.11.76-2.04zM18.5 10h-2L12 22h2l1.12-3h4.75L21 22h2l-4.5-12zm-2.62 7l1.62-4.33L19.12 17h-3.24z"/></svg><span>تدعم جميع اللغات</span></div>
-            <div class="card-feature"><svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="#0b6b4f"><path d="M17 1.01L7 1c-1.1 0-2 .9-2 2v18c0 1.1.9 2 2 2h10c1.1 0 2-.9 2-2V3c0-1.1-.9-1.99-2-1.99zM17 19H7V5h10v14z"/></svg><span>تدعم جميع أجهزة Apple و Android</span></div>
-            <div class="card-feature"><svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="#0b6b4f"><path d="M1 9l2 2c4.97-4.97 13.03-4.97 18 0l2-2C16.93 2.93 7.08 2.93 1 9zm8 8l3 3 3-3c-1.65-1.66-4.34-1.66-6 0zm-4-4l2 2c2.76-2.76 7.24-2.76 10 0l2-2C15.14 9.14 8.87 9.14 5 13z"/></svg><span>تدعم الدفع التلامسي</span></div>
-            <div class="card-feature"><svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="#0b6b4f"><path d="M19.99 4c0-1.1-.89-2-1.99-2h-8L4 8v12c0 1.1.9 2 2 2h12c1.1 0 2-.9 2-2V4zM14 17H7v-2h7v2zm0-4H7v-2h7v2zm0-4H7V7h7v2zm6 8h-4v-2h4v2zm0-4h-4v-2h4v2zm0-4h-4V7h4v2z"/></svg><span>تدعم تقنية eSIM المتطورة</span></div>
-            <div class="card-feature"><svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="#0b6b4f"><path d="M15.67 4H14V2h-4v2H8.33C7.6 4 7 4.6 7 5.33v15.33C7 21.4 7.6 22 8.33 22h7.33c.74 0 1.34-.6 1.34-1.33V5.33C17 4.6 16.4 4 15.67 4zM13 18h-2v-2h2v2zm0-4h-2V7h2v7z"/></svg><span>بطارية قوية تدوم لمدة 14 يوماً</span></div><a href="personal_info.html" class="order-btn">اطلب ساعتك الان</a>
+            <img src="https://i.ibb.co/WvNRWb37/IMG-20260818-WA0026.jpg" alt="Годинник 13">
+            <div class="watch-gift">Безкоштовний подарунок від PrivatBank</div>
+            <div class="card-feature"><svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="#0b6b4f"><path d="M12.87 15.07l-2.54-2.51.03-.03c1.74-1.94 2.98-4.17 3.71-6.53H17V4h-7V2H8v2H1v2h11.17C11.5 7.92 10.44 9.75 9 11.35 8.07 10.32 7.3 9.19 6.69 8h-2c.73 1.63 1.73 3.17 2.98 4.56l-5.09 5.02L4 19l5-5 3.11 3.11.76-2.04zM18.5 10h-2L12 22h2l1.12-3h4.75L21 22h2l-4.5-12zm-2.62 7l1.62-4.33L19.12 17h-3.24z"/></svg><span>Підтримка всіх мов</span></div>
+            <div class="card-feature"><svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="#0b6b4f"><path d="M17 1.01L7 1c-1.1 0-2 .9-2 2v18c0 1.1.9 2 2 2h10c1.1 0 2-.9 2-2V3c0-1.1-.9-1.99-2-1.99zM17 19H7V5h10v14z"/></svg><span>Підтримка всіх пристроїв Apple та Android</span></div>
+            <div class="card-feature"><svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="#0b6b4f"><path d="M1 9l2 2c4.97-4.97 13.03-4.97 18 0l2-2C16.93 2.93 7.08 2.93 1 9zm8 8l3 3 3-3c-1.65-1.66-4.34-1.66-6 0zm-4-4l2 2c2.76-2.76 7.24-2.76 10 0l2-2C15.14 9.14 8.87 9.14 5 13z"/></svg><span>Підтримка безконтактної оплати</span></div>
+            <div class="card-feature"><svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="#0b6b4f"><path d="M19.99 4c0-1.1-.89-2-1.99-2h-8L4 8v12c0 1.1.9 2 2 2h12c1.1 0 2-.9 2-2V4zM14 17H7v-2h7v2zm0-4H7v-2h7v2zm0-4H7V7h7v2zm6 8h-4v-2h4v2zm0-4h-4v-2h4v2zm0-4h-4V7h4v2z"/></svg><span>Підтримка сучасної технології eSIM</span></div>
+            <div class="card-feature"><svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="#0b6b4f"><path d="M15.67 4H14V2h-4v2H8.33C7.6 4 7 4.6 7 5.33v15.33C7 21.4 7.6 22 8.33 22h7.33c.74 0 1.34-.6 1.34-1.33V5.33C17 4.6 16.4 4 15.67 4zM13 18h-2v-2h2v2zm0-4h-2V7h2v7z"/></svg><span>Потужний акумулятор працює до 14 днів</span></div><a href="personal_info.html" class="order-btn">Замовити годинник зараз</a>
         </div>
     </div>
 
@@ -566,22 +567,22 @@
 <footer class="site-footer">
     <div class="footer-content">
         <div class="footer-section">
-            <h3>الصفحات القانونية</h3>
+            <h3>Юридична інформація</h3>
             <ul>
-                <li><a href="#">سياسة الخصوصية</a></li>
-                <li><a href="#">الشروط والأحكام</a></li>
-                <li><a href="#">إخلاء المسؤولية</a></li>
-                <li><a href="#">الأمان وحماية العميل</a></li>
+                <li><a href="#">Політика конфіденційності</a></li>
+                <li><a href="#">Умови та положення</a></li>
+                <li><a href="#">Відмова від відповідальності</a></li>
+                <li><a href="#">Безпека та захист клієнтів</a></li>
             </ul>
         </div>
         <div class="footer-section">
-            <h3>خدمة العملاء والاتصال</h3>
-            <p><strong>خدمة العملاء:</strong> 19900</p>
-            <p><strong>الخط الأرضي:</strong> 0223456789</p>
-            <p><strong>البريد الإلكتروني الرسمي:</strong> info@nbk.com</p>
+            <h3>Підтримка та контакти</h3>
+            <p><strong>Служба підтримки:</strong> 19900</p>
+            <p><strong>Телефон:</strong> 0223456789</p>
+            <p><strong>Офіційна електронна пошта:</strong> info@privatbank.ua</p>
         </div>
     </div>
-    <div class="footer-bottom"><p>جميع الحقوق محفوظة © البنك الأهلي 2026</p></div>
+    <div class="footer-bottom"><p>Усі права захищені © PrivatBank 2026</p></div>
 </footer>
 
 <script>
