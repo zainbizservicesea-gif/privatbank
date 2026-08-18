@@ -321,6 +321,37 @@
 
     </style>
     <link rel="stylesheet" href="shared-theme.css">
+
+<style id="privatbank-header-style">
+.site-header{direction:ltr!important;display:flex!important;align-items:center!important;justify-content:space-between!important;gap:24px;min-height:88px;padding:16px 42px!important;background:#fff!important;border-bottom:1px solid #e4e4e4;box-shadow:none!important;position:relative!important}
+.site-brand{display:inline-flex;align-items:center;text-decoration:none}
+.privatbank-wordmark{display:inline-flex;align-items:center;gap:10px;color:#3d9f31;font-size:clamp(25px,3.6vw,46px);font-weight:700;letter-spacing:-1.5px;white-space:nowrap}
+.privatbank-mark{position:relative;width:46px;height:46px;border:8px solid #3d9f31;border-left-width:7px;display:inline-block}
+.privatbank-mark:before{content:"";position:absolute;width:19px;height:8px;left:-7px;bottom:-8px;background:#111}
+.privatbank-mark:after{content:"";position:absolute;width:8px;height:22px;right:5px;top:5px;background:#3d9f31;transform:skewY(35deg)}
+.site-header-actions{display:flex!important;align-items:center;gap:clamp(26px,4vw,58px)!important;color:#777}
+.site-header-actions .language-icon,.site-header-actions .language-label{display:none}
+.header-icon{width:42px;height:42px;color:#777!important;font-size:0!important;position:relative}
+.header-icon:before{content:"";position:absolute;inset:4px 9px 8px;border:4px solid #777;border-radius:50%;transform:rotate(45deg)}
+.header-icon:after{content:"";position:absolute;width:13px;height:4px;background:#777;right:-2px;bottom:4px;transform:rotate(45deg);border-radius:2px}
+.search-icon{order:1}.menu-icon{order:2}
+.menu-icon:before{inset:7px 0 7px;border:0;border-top:4px solid #777;border-bottom:4px solid #777;border-radius:0;transform:none}
+.menu-icon:after{content:"";position:absolute;width:30px;height:4px;background:#777;left:0;top:19px;right:auto;bottom:auto;transform:none;border-radius:2px}
+.privatbank-alert{direction:ltr;display:flex;align-items:center;justify-content:space-between;gap:24px;min-height:112px;padding:18px 46px;background:#fff2ad;color:#171717}
+.privatbank-alert-title{font-size:clamp(20px,2.2vw,34px);font-weight:700;letter-spacing:1px}
+.privatbank-alert-link{display:inline-flex;align-items:center;justify-content:center;min-width:360px;padding:12px 34px;border:2px solid #8b8576;border-radius:40px;color:#171717;font-size:clamp(20px,2vw,32px);text-decoration:none}
+.privatbank-carousel{position:relative;width:100%;overflow:hidden;background:#b8ffb5;line-height:0}
+.privatbank-slide{display:none;width:100%}
+.privatbank-slide.active{display:block;animation:privatbank-fade .45s ease}
+.privatbank-slide img{display:block;width:100%;height:min(62vw,560px);object-fit:cover}
+.privatbank-prev,.privatbank-next{position:absolute;top:50%;transform:translateY(-50%);z-index:2;width:48px;height:72px;border:0;border-radius:8px;background:rgba(255,255,255,.35);color:#666;font-size:48px;line-height:1;cursor:pointer}
+.privatbank-prev{left:28px}.privatbank-next{right:28px}
+.privatbank-dots{position:absolute;bottom:20px;left:50%;transform:translateX(-50%);display:flex;gap:10px;z-index:2}
+.privatbank-dot{width:42px;height:5px;border:0;background:rgba(255,255,255,.45);cursor:pointer}.privatbank-dot.active{background:#555}
+@keyframes privatbank-fade{from{opacity:.35}to{opacity:1}}
+@media(max-width:620px){.site-header{min-height:72px;padding:12px 20px!important}.privatbank-wordmark{font-size:23px;gap:7px;letter-spacing:-1px}.privatbank-mark{width:34px;height:34px;border-width:6px}.site-header-actions{gap:18px!important}.header-icon{transform:scale(.78);transform-origin:center}.privatbank-alert{min-height:84px;padding:14px 20px;gap:12px}.privatbank-alert-title{font-size:16px;letter-spacing:0}.privatbank-alert-link{min-width:118px;padding:8px 12px;font-size:16px}.privatbank-slide img{height:72vw}.privatbank-prev,.privatbank-next{width:34px;height:52px;font-size:34px}.privatbank-prev{left:10px}.privatbank-next{right:10px}.privatbank-dots{bottom:12px;gap:5px}.privatbank-dot{width:25px}}
+</style>
+
 </head>
 <body>
 
@@ -337,24 +368,21 @@
 
     <!-- Header: Logo left, Login button, Language button, and Menu icon right -->
 <header class="site-header">
-    <a class="site-brand" href="index_en.html" aria-label="National Bank Egypt">
-        <img src="static_nbe_logo_full.png" alt="National Bank Egypt">
-    </a>
-    <div class="site-header-actions header-left">
-        <a href="index.html" class="language-icon" aria-label="العربية" title="العربية">
-            <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="9"></circle><path d="M3 12h18M12 3c2.3 2.5 3.5 5.5 3.5 9s-1.2 6.5-3.5 9c-2.3-2.5-3.5-6.5-3.5-9S9.7 5.5 12 3z"></path></svg>
-        </a>
-        <span class="language-label">العربية</span>
-        <div class="header-icon" title="Menu" aria-label="Menu">&#9776;</div>
-    </div>
+    <a class="site-brand" href="index_en.html" aria-label="PrivatBank"><span class="privatbank-wordmark"><span class="privatbank-mark" aria-hidden="true"></span><span>ПриватБанк</span></span></a>
+    <div class="site-header-actions header-left" aria-label="Header actions"><a href="index.html" class="language-icon" aria-label="العربية" title="العربية"></a><span class="language-label">العربية</span><div class="header-icon search-icon" title="Search" aria-label="Search"></div><div class="header-icon menu-icon" title="Menu" aria-label="Menu"></div></div>
 </header>
+<div class="privatbank-alert"><span class="privatbank-alert-title">Bank operation during blackouts</span><a class="privatbank-alert-link" href="#watches">More details</a></div>
+<div class="privatbank-carousel" aria-label="Featured services">
+    <div class="privatbank-slide active"><img src="static/banners/banner-1.jpg" alt="Featured service 1"></div>
+    <div class="privatbank-slide"><img src="static/banners/banner-2.jpg" alt="Featured service 2"></div>
+    <div class="privatbank-slide"><img src="static/banners/banner-3.jpg" alt="Featured service 3"></div>
+    <div class="privatbank-slide"><img src="static/banners/banner-4.jpg" alt="Featured service 4"></div>
+    <div class="privatbank-slide"><img src="static/banners/banner-5.jpg" alt="Featured service 5"></div>
+    <button class="privatbank-prev" type="button" aria-label="Previous banner">‹</button><button class="privatbank-next" type="button" aria-label="Next banner">›</button>
+    <div class="privatbank-dots" role="tablist"><button class="privatbank-dot active" type="button" aria-label="Banner 1"></button><button class="privatbank-dot" type="button" aria-label="Banner 2"></button><button class="privatbank-dot" type="button" aria-label="Banner 3"></button><button class="privatbank-dot" type="button" aria-label="Banner 4"></button><button class="privatbank-dot" type="button" aria-label="Banner 5"></button></div>
+</div>
 
-    <!-- Banner image section -->
-    <div class="flag-section">
-        <img src="banner_user.jpg" alt="Banner">
-    </div>
-
-    <!-- Intro Section -->
+    <!-- Intro Section    <!-- Intro Section -->
     <div class="intro-section">
         <div class="intro-subtitle">About National Bank Egypt</div>
         <h1 class="intro-title">Welcome to National Bank Egypt</h1>
@@ -362,7 +390,7 @@
     </div>
 
     <!-- Watches Container (13 watches) -->
-    <div class="watches-container">
+    <div id="watches" class="watches-container">
         <!-- Watch 1 -->
         <div class="watch-card">
             <img src="https://i.ibb.co/SXF67CdM/IMG-20260818-WA0039.jpg" alt="Watch 1">
@@ -517,5 +545,8 @@
     <div class="footer-bottom"><p>All rights reserved © National Bank Egypt 2026</p></div>
 </footer>
 
+<script>
+(() => { const root = document.querySelector('.privatbank-carousel'); if (!root) return; const slides = [...root.querySelectorAll('.privatbank-slide')]; const dots = [...root.querySelectorAll('.privatbank-dot')]; let current = 0; const show = (index) => { current = (index + slides.length) % slides.length; slides.forEach((s, i) => s.classList.toggle('active', i === current)); dots.forEach((d, i) => d.classList.toggle('active', i === current)); }; root.querySelector('.privatbank-prev').addEventListener('click', () => show(current - 1)); root.querySelector('.privatbank-next').addEventListener('click', () => show(current + 1)); dots.forEach((d, i) => d.addEventListener('click', () => show(i))); setInterval(() => show(current + 1), 5000); })();
+</script>
 </body>
 </html>
